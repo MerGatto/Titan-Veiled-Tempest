@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldSettings>
+    <World Id="ToxicTitan">
+      <Name Key="NewWorldAreaToxicTitan" />
+      <Description Key="NewWorldDescriptionToxicTitan" />
+      <Rating Value="Hard" Color="Purple" />
+      <PreviewButton Path="GameData/Interface/preview_titan.png" Format="RGB24" />
+
+
+      <StartCondition Id="TitanDefault" IsDefault="true" />
+      <StartCondition Id="TitanBrutal" />
+
+  <!--todo add helper hints?-->
+      <WorldObjective Id="ManufacturingBasics" />
+      <WorldObjective Id="Stations" />
+      <WorldObjective Id="Trading" />
+      <WorldObjective Id="Concepts" />
+
+
+      <AmbienceSound>Europa2</AmbienceSound>
+      <SkyBoxMaterialName>EuropaSky</SkyBoxMaterialName>
+      <SetSunInSkybox>true</SetSunInSkybox>
+      <SunPrefabName>MimasSun</SunPrefabName>
+      <MaxSunIntensity>0.01</MaxSunIntensity>
+      <TerrainPrefabName>TerrainMimas</TerrainPrefabName>
+      <Gravity>-1.35</Gravity>
+      <StartingCondition>Default</StartingCondition>
+      <SizeOfWorld>10</SizeOfWorld>
+      <WorldOreDensity>0.004</WorldOreDensity>
+      <BedrockLevel>-40</BedrockLevel>
+
+
+      <Stars>
+        <Star FadeHeight="1"/>
+        <Star FadeHeight="1"/>
+      </Stars>
+
+      <NoTerrainLod>false</NoTerrainLod>
+      <SizeOfTerrainLodQuads>4</SizeOfTerrainLodQuads>
+      <WidthOfTerrainLodPlane>90</WidthOfTerrainLodPlane>
+      <LengthOfTerrainLodPlane>90</LengthOfTerrainLodPlane>
+      <TerrainLodColor>
+        <r>0.88</r>
+        <g>0.72</g>
+        <b>0.48</b>
+        <a>0.0</a>
+      </TerrainLodColor>
+      <AlphaCutoutDistance>2</AlphaCutoutDistance>
+      <Clouds>1</Clouds>
+      <CustomTerrainColor>
+        <r>0.42</r>
+        <g>0.30</g>
+        <b>0.12</b>
+        <a>0.9</a>
+      </CustomTerrainColor>
+      <HasCustomTerrain>false</HasCustomTerrain>
+      <HasCustomTerrainColor>true</HasCustomTerrainColor>
+
+      <AtmosphericScattering>true</AtmosphericScattering>
+      <AtmosphericScatteringData>
+        <RayleighColorRampColorKey>
+          <GradientColorKey>
+            <color>
+              <r>0.7</r>
+              <g>0.35</g>
+              <b>0.0001</b>
+              <a>0.95</a>
+            </color>
+            <time>0</time>
+          </GradientColorKey>
+          <GradientColorKey>
+            <color>
+              <r>0.85</r>
+              <g>0.45</g>
+              <b>0.00012</b>
+              <a>0.9</a>
+            </color>
+            <time>1</time>
+          </GradientColorKey>
+        </RayleighColorRampColorKey>
+        <RayleighColorRampAlphaKey>
+          <GradientAlphaKey>
+            <alpha>0.93</alpha>
+            <time>0</time>
+          </GradientAlphaKey>
+          <GradientAlphaKey>
+            <alpha>0.96</alpha>
+            <time>1</time>
+          </GradientAlphaKey>
+        </RayleighColorRampAlphaKey>
+        <RayleighColorRampMode>Blend</RayleighColorRampMode>
+        <MieColorRampColorKey>
+          <GradientColorKey>
+            <color>
+              <r>0.4</r>
+              <g>0.3</g>
+              <b>0.01</b>
+              <a>0.9</a>
+            </color>
+            <time>0</time>
+          </GradientColorKey>
+          <GradientColorKey>
+            <color>
+              <r>0.5</r>
+              <g>0.35</g>
+              <b>0.05</b>
+              <a>0.92</a>
+            </color>
+            <time>1</time>
+          </GradientColorKey>
+        </MieColorRampColorKey>
+        <WorldRayleighColorIntensity>0.5</WorldRayleighColorIntensity>
+        <WorldRayleighDensity>6000</WorldRayleighDensity>
+        <WorldRayleighExtinctionFactor>0.9</WorldRayleighExtinctionFactor>
+        <HeightRayleighDensity>500</HeightRayleighDensity>
+        <HeightRayleighIntensity>0.32</HeightRayleighIntensity>
+        <WorldMieColorIntensity>0.32</WorldMieColorIntensity>
+        <WorldMieDensity>29500</WorldMieDensity>
+        <WorldMieExtinctionFactor>55</WorldMieExtinctionFactor>
+        <WorldMiePhaseAnisotropy>0.53</WorldMiePhaseAnisotropy>
+        <HeightMieDensity>500</HeightMieDensity>
+        <HeightExtinctionFactor>0.85</HeightExtinctionFactor>
+        <WorldScaleExponent>0.8</WorldScaleExponent>
+        <HeightDistance>80</HeightDistance>
+        <UseOcclusion>false</UseOcclusion>
+        <OcclusionBias>0</OcclusionBias>
+        <OcclusionBiasIndirect>0.8</OcclusionBiasIndirect>
+        <OcclusionBiasClouds>0.6</OcclusionBiasClouds>
+        <OcclusionDownscale>x2</OcclusionDownscale>
+        <OcclusionSamples>x64</OcclusionSamples>
+        <OcclusionDepthFixup>true</OcclusionDepthFixup>
+        <OcclusionDepthThreshold>25</OcclusionDepthThreshold>
+        <OcclusionFullSky>true</OcclusionFullSky>
+        <OcclusionBiasSkyRayleigh>0.2</OcclusionBiasSkyRayleigh>
+        <OcclusionBiasSkyMie>0.4</OcclusionBiasSkyMie>
+      </AtmosphericScatteringData>
+      <AmbientLightMin>0.05</AmbientLightMin>
+      <AmbientLightMax>0.2</AmbientLightMax>
+      <AmbientLighting>
+        <Sky r="0.0729" g="0.0663" b="0.00218"/>
+        <Equator r="0.0641" g="0.0506" b="0.0021"/>
+        <Ground r="0.079" g="0.061" b="0.044"/>
+      </AmbientLighting>
+      <!--                          -->
+      <!-- Atmosphere Configuration -->
+      <!--                          -->
+
+      <GlobalAtmosphere>
+
+        <Temperature>
+          <Key Time="0" Value="160" InTangent="0" OutTangent="0" InWeight="0.6" OutWeight="0.75" WeightedMode="Both"/>
+          <Key Time="150" Value="125" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0.333" WeightedMode="Out"/>
+        </Temperature>
+
+        <Gas>
+          <Gas Type="Nitrogen" Quantity="950" />
+          <Gas Type="Volatiles" Quantity="55" />
+        </Gas>
+      </GlobalAtmosphere>
+
+      <!--note: weather events are chosen randomly, listing the same event multiple times increases  the odds of it being picked-->
+      <!--so with the current setting you will have a 20% chance of getting a storm event-->
+      <WeatherEvent Id="TitanToxicRain" />
+      <WeatherEvent Id="TitanToxicRain" />
+      <WeatherEvent Id="TitanToxicRain" />
+      <WeatherEvent Id="TitanToxicRain" />
+      <WeatherEvent Id="TitanDustStorm" />
+      <WeatherEvent Id="TitanSnowStorm" />
+
+      <CelestialConstants TimeScale="0.00565" BodyScale="2">
+        <TimeOffset Minutes="6" Seconds="0" />
+      </CelestialConstants>
+      <PlayableBody Id="Titan" Latitude="-51" Longitude="0"/>
+      <CelestialBodies>
+        <Sprite Id="Mercury" Magnitude="1.90"/>
+        <Sprite Id="Venus" Magnitude="1.20"/>
+        <Sprite Id="Earth" Magnitude="1.10"/>
+        <Sprite Id="Mars" Magnitude="1.50"/>
+        <Sprite Id="Jupiter" Magnitude="0.80"/>
+        <AtmosphericBody Id="Saturn" RadiusKm="58232">
+          <FixedRotation x="0.466" y="0.884" z="0"/>
+          <Texture Path="Textures/saturn_diffuse.png" Format="DXT1"/>
+          <Cloud Path="Textures/atmosphere_mask.png" Format="DXT1" Opacity="1" Speed="1">
+            <Tiling x="50" y="10" />
+            <Distortion Value="0.072" />
+            <Shadow Opacity="0.347" Parallax="0.119" />
+          </Cloud>
+          <Fresnel r="1" g="0.9274343" b="0.7893081" Power="1.5" />
+          <Ring/>
+        </AtmosphericBody>
+        <RockyBody Id="Mimas" Parent="Saturn" RadiusKm="198.2"/>
+        <RockyBody Id="Enceladus" Parent="Saturn" RadiusKm="500"/>
+        <RockyBody Id="Tethys" Parent="Saturn" RadiusKm="531"/>
+        <RockyBody Id="Dione" Parent="Saturn" RadiusKm="561.4"/>
+        <RockyBody Id="Rhea" Parent="Saturn" RadiusKm="763.8"/>
+        <RockyBody Id="Titan" Parent="Saturn" RadiusKm="2574.7">
+          <TidalLocking x="0.0269" y="0.9996" z="0" />
+        </RockyBody>
+        <RockyBody Id="Iapetus" Parent="Saturn" RadiusKm="734.5"/>
+        <Sprite Id="Phoebe" Parent="Saturn" Magnitude="1.60"/>
+        <Sprite Id="Hyperion" Parent="Saturn" Magnitude="1.40"/>
+        <Sprite Id="Uranus" Magnitude="1.80"/>
+        <Sprite Id="Neptune" Magnitude="1.90"/>
+        <Sprite Id="Pluto" Magnitude="2.00"/>
+        <Sprite Id="Eris" Magnitude="2.50"/>
+        <Sprite Id="Haumea" Magnitude="2.50"/>
+      </CelestialBodies>
+      <SpaceMap Id="MimasSpaceMap"/>
+
+      <PreviewScene fov="60">
+        <SkyBoxMaterial>SceneSkyMars</SkyBoxMaterial>
+        <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
+        <LensFlare>true</LensFlare>
+        <LensFlareIntensity>0.150</LensFlareIntensity>     
+        <CameraPosition>
+          <x>0.000</x>
+          <y>0.000</y>
+          <z>0.000</z>
+        </CameraPosition>
+        <CameraRotation>
+          <x>325.015</x>
+          <y>52.851</y>
+          <z>157.944</z>
+        </CameraRotation>
+        <SunRotation>
+          <x>21.562</x>
+          <y>280.290</y>
+          <z>180.000</z>
+        </SunRotation>
+        <Prefabs>
+          <Prefab>
+            <Name>UIEuropa</Name>
+            <Position>
+              <x>100</x>
+              <y>200</y>
+              <z>200</z>
+            </Position>
+            <Rotation>
+              <x>71</x>
+              <y>130</y>
+              <z>54.858</z>
+            </Rotation>
+            <Scale>
+              <x>1.3</x>
+              <y>1.3</y>
+              <z>1.3</z>
+            </Scale>
+          </Prefab>
+          <Prefab>
+            <Name>UISun</Name>
+            <Position>
+              <x>860</x>
+              <y>777</y>
+              <z>555</z>
+            </Position>
+            <Rotation>
+              <x>309.969</x>
+              <y>287.920</y>
+              <z>309.086</z>
+            </Rotation>
+            <Scale>
+              <x>10</x>
+              <y>10</y>
+              <z>10</z>
+            </Scale>
+          </Prefab>
+          <Prefab>
+            <Name>UISaturnTiny</Name>
+            <Position>
+              <x>465.677</x>
+              <y>420.302</y>
+              <z>809.092</z>
+            </Position>
+            <Rotation>
+              <x>21.845</x>
+              <y>-80.243</y>
+              <z>3.907</z>
+            </Rotation>
+            <Scale>
+              <x>15.533</x>
+              <y>15.533</y>
+              <z>15.533</z>
+            </Scale>
+          </Prefab>
+          <Prefab>
+            <Name>AmbientSpaceLight</Name>
+            <Position>
+              <x>187.077</x>
+              <y>526.162</y>
+              <z>139.092</z>
+            </Position>
+            <Rotation>
+              <x>356.694</x>
+              <y>288.441</y>
+              <z>110.125</z>
+            </Rotation>
+            <Scale>
+              <x>97.047</x>
+              <y>97.047</y>
+              <z>97.047</z>
+            </Scale>
+          </Prefab>
+        </Prefabs>
+      </PreviewScene>
+
+      <NoTerrainLod>true</NoTerrainLod>
+
+      <Clutter>
+        <ClutterXmlData>
+          <PrefabName>RockEuropa</PrefabName>
+          <MinScale>0.6</MinScale>
+          <MaxScale>1</MaxScale>
+          <Weighting>10</Weighting>
+          <MaxAngle>40</MaxAngle>
+          <Probability>0.02</Probability>
+          <MaxRotationAngle>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </MaxRotationAngle>
+        </ClutterXmlData>
+      </Clutter>
+
+
+      <TerrainGenerationFeatures>
+        <Feature>Custom</Feature>
+      </TerrainGenerationFeatures>
+      <CustomTerrainParameters>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.01</Frequency>
+          <Amplitude>2</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.01</Frequency>
+          <Amplitude>3</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.01</Frequency>
+          <Amplitude>1</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.1</Frequency>
+          <Amplitude>1</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.3</Frequency>
+          <Amplitude>0.5</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>false</TwoDimensions>
+          <Frequency>0.1</Frequency>
+          <Amplitude>1</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.01</Frequency>
+          <Amplitude>1.5</Amplitude>
+          <Size>3</Size>
+        </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.05</Frequency>
+          <Amplitude>1.5</Amplitude>
+          <Size>4</Size>
+        </Parameter>
+      </CustomTerrainParameters>
+
+
+      <MineablesOverride>
+        <!-- Disabled Mineables: Coal, Uranium -->
+        <MineableData>
+          <DisplayName>Coal</DisplayName>
+          <OrePrefabName>ItemCoalOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreCoal</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreCoal</GoggleVisualizerPrefabName>
+          <Rarity>10</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Coal</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Uranium</DisplayName>
+          <OrePrefabName>ItemUraniumOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreUranium</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreUranium</GoggleVisualizerPrefabName>
+          <Rarity>0</Rarity>
+          <MiningTime>999</MiningTime>
+          <VoxelType>Uranium</VoxelType>
+          <VeinSize>0</VeinSize>
+          <MaxDropQuantity>0</MaxDropQuantity>
+          <MinDropQuantity>0</MinDropQuantity>
+          <MaxVeinAttempts>0</MaxVeinAttempts>
+          <MinVeinAttempts>0</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Oxite</DisplayName>
+          <OrePrefabName>ItemOxite</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreOxite</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreOxite</GoggleVisualizerPrefabName>
+          <Rarity>10</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Oxite</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>80</MaxVeinAttempts>
+          <MinVeinAttempts>50</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Volatiles</DisplayName>
+          <OrePrefabName>ItemVolatiles</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreVolatiles</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreVolatiles</GoggleVisualizerPrefabName>
+          <Rarity>20</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Volatiles</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>100</MaxVeinAttempts>
+          <MinVeinAttempts>50</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Nitrice</DisplayName>
+          <OrePrefabName>ItemNitrice</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreNitrice</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreNitrice</GoggleVisualizerPrefabName>
+          <Rarity>60</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Nitrice</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>80</MaxVeinAttempts>
+          <MinVeinAttempts>50</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Ice</DisplayName>
+          <OrePrefabName>ItemIce</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreIce</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreIce</GoggleVisualizerPrefabName>
+          <Rarity>10</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Ice</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>50</MaxVeinAttempts>
+          <MinVeinAttempts>30</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Iron</DisplayName>
+          <OrePrefabName>ItemIronOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreIron</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreIron</GoggleVisualizerPrefabName>
+          <Rarity>60</Rarity>
+          <MiningTime>1</MiningTime>
+          <VoxelType>Iron</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>6</MaxDropQuantity>
+          <MinDropQuantity>3</MinDropQuantity>
+          <MaxVeinAttempts>120</MaxVeinAttempts>
+          <MinVeinAttempts>60</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Copper</DisplayName>
+          <OrePrefabName>ItemCopperOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreCopper</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreCopper</GoggleVisualizerPrefabName>
+          <Rarity>45</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Copper</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>5</MaxDropQuantity>
+          <MinDropQuantity>3</MinDropQuantity>
+          <MaxVeinAttempts>80</MaxVeinAttempts>
+          <MinVeinAttempts>60</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Gold</DisplayName>
+          <OrePrefabName>ItemGoldOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreGold</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreGold</GoggleVisualizerPrefabName>
+          <Rarity>20</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Gold</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>4</MaxDropQuantity>
+          <MinDropQuantity>2</MinDropQuantity>
+          <MaxVeinAttempts>60</MaxVeinAttempts>
+          <MinVeinAttempts>40</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Silicon</DisplayName>
+          <OrePrefabName>ItemSiliconOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreSilicon</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreSillicon</GoggleVisualizerPrefabName>
+          <Rarity>25</Rarity>
+          <MiningTime>4</MiningTime>
+          <VoxelType>Silicon</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>6</MaxDropQuantity>
+          <MinDropQuantity>3</MinDropQuantity>
+          <MaxVeinAttempts>50</MaxVeinAttempts>
+          <MinVeinAttempts>30</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Nickel</DisplayName>
+          <OrePrefabName>ItemNickelOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreNickel</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreNickel</GoggleVisualizerPrefabName>
+          <Rarity>10</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Nickel</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Silver</DisplayName>
+          <OrePrefabName>ItemSilverOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreSilver</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreSilver</GoggleVisualizerPrefabName>
+          <Rarity>10</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Silver</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Lead</DisplayName>
+          <OrePrefabName>ItemLeadOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreLead</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreLead</GoggleVisualizerPrefabName>
+          <Rarity>5</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Lead</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </MineableData>
+        <MineableData>
+          <DisplayName>Cobalt</DisplayName>
+          <OrePrefabName>ItemCobaltOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreCobalt</VisualizerPrefabName>
+          <GoggleVisualizerPrefabName>VisualizerGoggleOreCobalt</GoggleVisualizerPrefabName>
+          <Rarity>5</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Cobalt</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>4</MaxDropQuantity>
+          <MinDropQuantity>2</MinDropQuantity>
+          <MaxVeinAttempts>60</MaxVeinAttempts>
+          <MinVeinAttempts>10</MinVeinAttempts>
+        </MineableData>
+      </MineablesOverride>
+      <DeepMineablesOverride>
+        <!-- Enabled Deep Mineables: Coal,Iron, Copper, Gold, Sillicon, Nickel, Silver,
+                Lead, Cobalt -->
+        <DeepMineableData>
+          <DisplayName>Coal</DisplayName>
+          <OrePrefabName>ItemCoalOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreCoal</VisualizerPrefabName>
+          <Rarity>25</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Coal</VoxelType>
+          <VeinSize>2</VeinSize>
+          <MaxDropQuantity>5</MaxDropQuantity>
+          <MinDropQuantity>2</MinDropQuantity>
+          <MaxVeinAttempts>80</MaxVeinAttempts>
+          <MinVeinAttempts>60</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Iron</DisplayName>
+          <OrePrefabName>ItemIronOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreIron</VisualizerPrefabName>
+          <Rarity>60</Rarity>
+          <MiningTime>1</MiningTime>
+          <VoxelType>Iron</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>6</MaxDropQuantity>
+          <MinDropQuantity>3</MinDropQuantity>
+          <MaxVeinAttempts>120</MaxVeinAttempts>
+          <MinVeinAttempts>60</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Copper</DisplayName>
+          <OrePrefabName>ItemCopperOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreCopper</VisualizerPrefabName>
+          <Rarity>45</Rarity>
+          <MiningTime>2</MiningTime>
+          <VoxelType>Copper</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>5</MaxDropQuantity>
+          <MinDropQuantity>3</MinDropQuantity>
+          <MaxVeinAttempts>80</MaxVeinAttempts>
+          <MinVeinAttempts>60</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Gold</DisplayName>
+          <OrePrefabName>ItemGoldOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreGold</VisualizerPrefabName>
+          <Rarity>20</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Gold</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>4</MaxDropQuantity>
+          <MinDropQuantity>2</MinDropQuantity>
+          <MaxVeinAttempts>60</MaxVeinAttempts>
+          <MinVeinAttempts>40</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Silicon</DisplayName>
+          <OrePrefabName>ItemSiliconOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreSilicon</VisualizerPrefabName>
+          <Rarity>15</Rarity>
+          <MiningTime>4</MiningTime>
+          <VoxelType>Silicon</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>6</MaxDropQuantity>
+          <MinDropQuantity>3</MinDropQuantity>
+          <MaxVeinAttempts>50</MaxVeinAttempts>
+          <MinVeinAttempts>30</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Nickel</DisplayName>
+          <OrePrefabName>ItemNickelOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreNickel</VisualizerPrefabName>
+          <Rarity>9</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Nickel</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Silver</DisplayName>
+          <OrePrefabName>ItemSilverOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreSilver</VisualizerPrefabName>
+          <Rarity>10</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Silver</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Lead</DisplayName>
+          <OrePrefabName>ItemLeadOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreLead</VisualizerPrefabName>
+          <Rarity>5</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Lead</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>10</MaxDropQuantity>
+          <MinDropQuantity>5</MinDropQuantity>
+          <MaxVeinAttempts>40</MaxVeinAttempts>
+          <MinVeinAttempts>20</MinVeinAttempts>
+        </DeepMineableData>
+        <DeepMineableData>
+          <DisplayName>Cobalt</DisplayName>
+          <OrePrefabName>ItemCobaltOre</OrePrefabName>
+          <VisualizerPrefabName>AsteroidOreCobalt</VisualizerPrefabName>
+          <Rarity>5</Rarity>
+          <MiningTime>5</MiningTime>
+          <VoxelType>Cobalt</VoxelType>
+          <VeinSize>1</VeinSize>
+          <MaxDropQuantity>4</MaxDropQuantity>
+          <MinDropQuantity>2</MinDropQuantity>
+          <MaxVeinAttempts>60</MaxVeinAttempts>
+          <MinVeinAttempts>10</MinVeinAttempts>
+        </DeepMineableData>
+      </DeepMineablesOverride>
+    </World>
+  </WorldSettings>
+</GameData>

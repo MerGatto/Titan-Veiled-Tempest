@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ToxicTitan</Name>
+  <Author>MerGatto</Author>
+  <Version>0.1.0</Version>
+  <Description>
+    [h1]ToxicTitan[/h1]
+    [b]WARNING:[/b] This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.
+    See: https://github.com/jixxed/StationeersMods
+
+    My attempt on titan, inspired by vivi and murk.
+    This version features 3 different weather events, most often you'll encounter Acid Methane(Volatiles) Rain, but occusionally you'll also encounter Snow storms and dust storms.
+    This worldsettings will work on it's own but for the intended exprience (mostly weather fixes and patches) you'll need to have StationeersMods installed (https://github.com/jixxed/StationeersMods).
+    
+    
+
+    Credits:
+    vivi - https://steamcommunity.com/profiles/76561198187662981/
+    murk - https://steamcommunity.com/id/iammurk
+  </Description>
+    <InGameDescription>
+    <![CDATA[<size="30"><color=#ffa500> ToxicTitan </color></size>
+<b>WARNING:</b> <color=#ff0000>This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.</color>
+See: https://github.com/jixxed/StationeersMods
+
+Description for ToxicTitan
+]]>
+  </InGameDescription>
+    <ChangeLog>
+    [h3]Version 0.1.0:[/h3]
+    [list]
+    [*]Initial release
+    [/list]
+  </ChangeLog>
+  <Tags>
+    <Tag>World Settings</Tag>
+    <Tag>Start Conditions</Tag>
+    <Tag>StationeersMods</Tag>
+  </Tags>
+  <LoadBefore>Core</LoadBefore>
+</ModMetadata>

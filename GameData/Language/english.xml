@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>English</Name>
+    <Code>EN</Code>
+    <Font>font_english</Font>
+    <Interface>
+
+        <!-- Start Menu -->
+      <Record>
+        <Key>NewWorldAreaToxicTitan</Key>
+        <Value>Titan</Value>
+      </Record>
+      <Record>
+          <Key>NewWorldDescriptionToxicTitan</Key>
+          <Value>
+            Titan, Saturn's largest moon, is a frozen, methane-rich world with treacherous storms and toxic rain, offering both danger and potential for human survival.
+          </Value>
+      </Record>
+
+        <Record>
+            <Key>DefaultStartConditionTitan</Key>
+            <Value>Default (Titan)</Value>
+        </Record>
+
+        <Record>
+            <Key>BrutalStartConditionTitan</Key>
+            <Value>Brutal (Titan)</Value>
+        </Record>
+    </Interface>
+</Language>
