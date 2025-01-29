@@ -220,9 +220,9 @@
           <z>0.000</z>
         </CameraPosition>
         <CameraRotation>
-          <x>325.015</x>
-          <y>52.851</y>
-          <z>157.944</z>
+          <x>0.000</x>
+          <y>0.000</y>
+          <z>0.000</z>
         </CameraRotation>
         <SunRotation>
           <x>21.562</x>
@@ -231,29 +231,29 @@
         </SunRotation>
         <Prefabs>
           <Prefab>
-            <Name>UIEuropa</Name>
+            <Name>UIVenus</Name>
             <Position>
-              <x>100</x>
-              <y>200</y>
-              <z>200</z>
+              <x>159.470</x>
+              <y>-39.000</y>
+              <z>374.992</z>
             </Position>
             <Rotation>
-              <x>71</x>
-              <y>130</y>
-              <z>54.858</z>
+              <x>288.032</x>
+              <y>263.853</y>
+              <z>90.000</z>
             </Rotation>
             <Scale>
-              <x>1.3</x>
-              <y>1.3</y>
-              <z>1.3</z>
+              <x>150.000</x>
+              <y>150.000</y>
+              <z>150.000</z>
             </Scale>
           </Prefab>
           <Prefab>
             <Name>UISun</Name>
             <Position>
-              <x>860</x>
-              <y>777</y>
-              <z>555</z>
+              <x>-40.065</x>
+              <y>143.042</y>
+              <z>1612.192</z>
             </Position>
             <Rotation>
               <x>309.969</x>
@@ -261,16 +261,16 @@
               <z>309.086</z>
             </Rotation>
             <Scale>
-              <x>10</x>
-              <y>10</y>
-              <z>10</z>
+              <x>4</x>
+              <y>4</y>
+              <z>4</z>
             </Scale>
           </Prefab>
           <Prefab>
             <Name>UISaturnTiny</Name>
             <Position>
-              <x>465.677</x>
-              <y>420.302</y>
+              <x>265.677</x>
+              <y>260.302</y>
               <z>809.092</z>
             </Position>
             <Rotation>
@@ -279,9 +279,9 @@
               <z>3.907</z>
             </Rotation>
             <Scale>
-              <x>15.533</x>
-              <y>15.533</y>
-              <z>15.533</z>
+              <x>20</x>
+              <y>20</y>
+              <z>20</z>
             </Scale>
           </Prefab>
           <Prefab>

@@ -5,8 +5,6 @@
     <Code>EN</Code>
     <Font>font_english</Font>
     <Interface>
-
-        <!-- Start Menu -->
       <Record>
         <Key>NewWorldAreaToxicTitan</Key>
         <Value>Titan</Value>
@@ -22,7 +20,6 @@
             <Key>DefaultStartConditionTitan</Key>
             <Value>Default (Titan)</Value>
         </Record>
-
         <Record>
             <Key>BrutalStartConditionTitan</Key>
             <Value>Brutal (Titan)</Value>
