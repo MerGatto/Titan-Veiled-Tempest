@@ -31,8 +31,8 @@
 	<WeatherEvent Id="TitanToxicRain">
 		<Name Value="Acid Rain"/>
 		<ParticleId Value="Rain"/>
-		<CoolDown Min="1" Max="3"/>
-		<StartDelay Min="30" Max="60"/>
+		<CoolDown Min="1" Max="2"/>
+		<StartDelay Min="0" Max="0"/>
 		<Duration Min="180" Max="300"/>
 		<SolarRatio Value="0.5"/>
 		<WindStrength Value="3"/>
@@ -42,8 +42,8 @@
 			<Color r="1" g="0.62" b="0.51" a="0.865"/>
 		</Fog>
 		<TemperatureOffset>
-			<Day Value="-60"/>
-			<Night Value="-25"/>
+			<Day Value="-27"/>
+			<Night Value="-27"/>
 		</TemperatureOffset>
 		<Direction Value="Down"/>
 		<Shell1Sound Value="RainShell1"/>
@@ -56,13 +56,13 @@
     <Name Value="Snow Storm"/>
     <ParticleId Value="SnowStorm"/>
     <CoolDown Min="1" Max="3"/>
-    <StartDelay Min="120" Max="900"/>
-    <Duration Min="120" Max="600"/>
+    <StartDelay Min="120" Max="240"/>
+    <Duration Min="180" Max="600"/>
     <Fog>
       <Color r="1" g="0.77" b="0.66" a="1"/>
     </Fog>
     <TemperatureOffset>
-      <Day Value="-85"/>
+      <Day Value="-60"/>
       <Night Value="-60"/>
     </TemperatureOffset>
     <SolarRatio Value="0.1"/>

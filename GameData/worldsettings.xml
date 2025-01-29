@@ -150,12 +150,12 @@
       <GlobalAtmosphere>
 
         <Temperature>
-          <Key Time="0" Value="160" InTangent="0" OutTangent="0" InWeight="0.6" OutWeight="0.75" WeightedMode="Both"/>
-          <Key Time="150" Value="125" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0.333" WeightedMode="Out"/>
+          <Key Time="0" Value="142" InTangent="0" OutTangent="0" InWeight="0.6" OutWeight="0.75" WeightedMode="Both"/>
+          <Key Time="150" Value="127" InTangent="0" OutTangent="0" InWeight="0" OutWeight="0.333" WeightedMode="Out"/>
         </Temperature>
 
         <Gas>
-          <Gas Type="Nitrogen" Quantity="950" />
+          <Gas Type="Nitrogen" Quantity="1050" />
           <Gas Type="Volatiles" Quantity="55" />
         </Gas>
       </GlobalAtmosphere>
@@ -166,7 +166,6 @@
       <WeatherEvent Id="TitanToxicRain" />
       <WeatherEvent Id="TitanToxicRain" />
       <WeatherEvent Id="TitanToxicRain" />
-      <WeatherEvent Id="TitanDustStorm" />
       <WeatherEvent Id="TitanSnowStorm" />
 
       <CelestialConstants TimeScale="0.00565" BodyScale="2">
@@ -337,7 +336,7 @@
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
           <Frequency>0.01</Frequency>
-          <Amplitude>3</Amplitude>
+          <Amplitude>4</Amplitude>
           <Size>4</Size>
         </Parameter>
         <Parameter>
@@ -380,7 +379,7 @@
 
 
       <MineablesOverride>
-        <!-- Disabled Mineables: Coal, Uranium -->
+        <!-- Disabled Mineables: Uranium -->
         <MineableData>
           <DisplayName>Coal</DisplayName>
           <OrePrefabName>ItemCoalOre</OrePrefabName>

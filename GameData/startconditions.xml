@@ -19,7 +19,7 @@
 
     <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
     <Spawn Id="BrutalCrateTitan" Event="NewWorld" />
-    <!--<Spawn Id="OxygenTankInsulated" Event="NewWorld"/>-->
+    <Spawn Id="OxygenTankInsulated" Event="NewWorld"/>
     <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
     <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
   </StartCondition>

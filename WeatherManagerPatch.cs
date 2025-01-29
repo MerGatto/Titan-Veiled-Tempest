@@ -38,15 +38,16 @@ namespace ToxicTitan
     }
 
     [HarmonyPatch(typeof(WeatherManager), "HasWorldStartCooldownPastInDays")]
-    [UsedImplicitly]
     public static class WeatherManager_HasWorldStartCooldownPastInDays_Patch
     {
-        public static void Postfix(ref bool __result)
+        public static bool Prefix(ref bool __result)
         {
             if (WorldManager.CurrentWorldName == "ToxicTitan")
             {
                 __result = WorldManager.DaysPast > 1;
+                return false;
             }
+            return true;
         }
     }
 
