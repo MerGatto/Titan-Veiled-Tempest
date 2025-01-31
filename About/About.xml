@@ -8,31 +8,43 @@
     [b]WARNING:[/b] This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.
     See: https://github.com/jixxed/StationeersMods
 
-    My attempt on titan, inspired by vivi and murk, I created this based on the desire to have a more challenging alternative to Europa.
-    This version features 2 different weather events, most often you'll encounter Acid Methane Rain (Volatiles), but occusionally you'll also encounter Snow storms.
-    These worldsettings will work on their own but for the intended experience you'll need to have StationeersMods installed (https://github.com/jixxed/StationeersMods).
+    [h2]Description[/h2]
+    ToxicTitan is my attempt at creating a more challenging alternative to Europa, inspired by [b]vivi[/b] and [b]murk[/b]. This version features two different weather events:
+    [list]
+    [*][b]Acid Methane Rain (Volatiles)[/b] - Most commonly occurring.
+    [*][b]Snow Storms[/b] - Less frequent but still hazardous.
+    [/list]
+    These world settings can function independently, but for the intended experience, installing [url="https://github.com/jixxed/StationeersMods"]StationeersMods[/url] is recommended.
 
-    Having StationeersMods enables the following changes:
-    - First weather event will occur after 1 day instead of 7
-    - First weather event is guaranteed to be Acid Rain
-    - Acid Rain and SnowStorms will NOT trigger forced follow up events ('Regular' rain)
+    [h3]Features with StationeersMods Installed[/h3]
+    [list]
+    [*]The [b]first weather event[/b] occurs [b]after 1 day[/b] instead of 7.
+    [*]The [b]first weather event[/b] is always [b]Acid Rain[/b].
+    [*][b]Acid Rain[/b] and [b]Snow Storms[/b] do [b]not[/b] trigger forced follow-up events (e.g., 'Regular' rain).
+    [/list]
 
-    For added challenge I can highly recommend to use Free Lunch's Structure Thermodynamics mod alongside this world (https://steamcommunity.com/sharedfiles/filedetails/?id=3336803492)
+    For an added challenge, consider using  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3336803492]Free Lunch's Structure Thermodynamics mod[/url] alongside this world.
 
-    Some tips when playing on this world:
-    - Weather events will start very quickly after starting, so your first priority should be to create a safe space to put your stuff
-    - Using Airlocks might be dangerous during rain events, since it leaves behind liquid volatiles puddles, which will NOT count towards room pressure. I recommend either using a custom airlock script or a manual airlock with a liquid drain.
-    - Solar panels might as well not exist but wind power is quite reliable due to the increased amount of weather events
-    - Coal is rather rare on the surface but more abundant when using deep miners
-    - Oxide ice is also rather rare, but you can substitute Nitrice instead for furnace usage
-    - Use the cold atmosphere to your advantage, Gas fuel generators are rather easy to setup here for example
+    [h2]Gameplay Tips[/h2]
+    [list]
+    [*][b]Prepare early![/b] Weather events will start quickly, so prioritize creating a [b]safe storage space[/b].
+    [*][b]Beware of airlocks![/b] Acid Rain leaves [b]liquid volatile puddles[/b], which do [b]not[/b] count towards room pressure. Use a [b]custom airlock script[/b] or a [b]manual airlock with a liquid drain[/b].
+    [*][b]Solar power is ineffective[/b] due to frequent storms, but [b]wind power is reliable[/b].
+    [*][b]Coal is rare on the surface[/b] but can be found using [b]deep miners[/b].
+    [*][b]Oxite ice is scarce[/b], but [b]Nitric ice can substitute[/b] for furnace usage.
+    [*][b]Leverage the cold atmosphere[/b]—[b]Gas Fuel Generators[/b] are easier to set up.
+    [/list]
 
+    [h2]Credits[/h2]
+    [list]
+    [*][b]vivi[/b] -  [url=https://steamcommunity.com/profiles/76561198187662981/]Steam Profile[/url]
+    [*][b]murk[/b] -  [url=https://steamcommunity.com/id/iammurk]Steam Profile[/url]
+    [*][b]jixxed[/b] - Creator of  [url=https://github.com/jixxed/StationeersMods]StationeersMods[/url]
+    [*][b]pardeike[/b] - Creator of  [url=https://github.com/pardeike]Harmony[/url]
+    [/list]
 
-    Credits:
-    vivi - https://steamcommunity.com/profiles/76561198187662981/
-    murk - https://steamcommunity.com/id/iammurk
-    jixxed - for creating the StationeersMods framework https://github.com/jixxed/StationeersMods
-    pardeike - for creating Harmony https://github.com/pardeike
+    [b]Enjoy the challenge![/b] Feel free to contribute or provide feedback!
+
   </Description>
     <InGameDescription>
     <![CDATA[<size="30"><color=#ffa500> ToxicTitan </color></size>
