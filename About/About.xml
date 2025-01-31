@@ -44,7 +44,6 @@
     [/list]
 
     [b]Enjoy the challenge![/b] Feel free to contribute or provide feedback!
-
   </Description>
     <InGameDescription>
     <![CDATA[<size="30"><color=#ffa500> ToxicTitan </color></size>
@@ -60,6 +59,7 @@ Titan, Saturn's largest moon, is a frozen, methane-rich world with treacherous s
     [*]Initial release
     [/list]
   </ChangeLog>
+  <WorkshopHandle>3418110764</WorkshopHandle>
   <Tags>
     <Tag>World Settings</Tag>
     <Tag>Start Conditions</Tag>
