@@ -5,14 +5,14 @@
     <World Id="ToxicTitan">
       <Name Key="NewWorldAreaToxicTitan" />
       <Description Key="NewWorldDescriptionToxicTitan" />
-      <Rating Value="Hard" Color="Purple" />
+      <Rating Value="Challenging" Color="Orange" />
       <PreviewButton Path="GameData/Interface/preview_titan.png" Format="RGB24" />
 
 
       <StartCondition Id="TitanDefault" IsDefault="true" />
       <StartCondition Id="TitanBrutal" />
 
-  <!--todo add helper hints?-->
+      <!--todo add helper hints?-->
       <WorldObjective Id="ManufacturingBasics" />
       <WorldObjective Id="Stations" />
       <WorldObjective Id="Trading" />
@@ -212,7 +212,7 @@
         <SkyBoxMaterial>SceneSkyMars</SkyBoxMaterial>
         <SunPrefab>SpaceSun (UnityEngine.Light)</SunPrefab>
         <LensFlare>true</LensFlare>
-        <LensFlareIntensity>0.150</LensFlareIntensity>     
+        <LensFlareIntensity>0.150</LensFlareIntensity>
         <CameraPosition>
           <x>0.000</x>
           <y>0.000</y>
@@ -321,53 +321,49 @@
           </MaxRotationAngle>
         </ClutterXmlData>
       </Clutter>
-
-
+      <TerrainGenerationFeatureSettings>
+        <isEnabled>false</isEnabled>
+        <BigTileSize>100</BigTileSize>
+        <TerrainFeatureCraters>
+          <MaxCratersPerGrid>5</MaxCratersPerGrid>
+          <MaxCraterSize>15</MaxCraterSize>
+          <SmallCraterProbability>50</SmallCraterProbability>
+          <MediumCraterProbability>25</MediumCraterProbability>
+        </TerrainFeatureCraters>
+      </TerrainGenerationFeatureSettings>
       <TerrainGenerationFeatures>
         <Feature>Custom</Feature>
       </TerrainGenerationFeatures>
       <CustomTerrainParameters>
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
-          <Frequency>0.01</Frequency>
+          <Frequency>0.017</Frequency>
           <Amplitude>2</Amplitude>
           <Size>4</Size>
         </Parameter>
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
           <Frequency>0.01</Frequency>
-          <Amplitude>4</Amplitude>
+          <Amplitude>2.0</Amplitude>
           <Size>4</Size>
         </Parameter>
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
           <Frequency>0.01</Frequency>
-          <Amplitude>1</Amplitude>
+          <Amplitude>3.0</Amplitude>
           <Size>4</Size>
         </Parameter>
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
-          <Frequency>0.1</Frequency>
+          <Frequency>0.09</Frequency>
           <Amplitude>1</Amplitude>
-          <Size>4</Size>
-        </Parameter>
-        <Parameter>
-          <TwoDimensions>true</TwoDimensions>
-          <Frequency>0.3</Frequency>
-          <Amplitude>0.5</Amplitude>
-          <Size>4</Size>
-        </Parameter>
-        <Parameter>
-          <TwoDimensions>false</TwoDimensions>
-          <Frequency>0.1</Frequency>
-          <Amplitude>1</Amplitude>
-          <Size>4</Size>
+          <Size>1</Size>
         </Parameter>
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
           <Frequency>0.01</Frequency>
-          <Amplitude>1.5</Amplitude>
-          <Size>3</Size>
+          <Amplitude>2.5</Amplitude>
+          <Size>2</Size>
         </Parameter>
         <Parameter>
           <TwoDimensions>true</TwoDimensions>
@@ -375,7 +371,14 @@
           <Amplitude>1.5</Amplitude>
           <Size>4</Size>
         </Parameter>
+        <Parameter>
+          <TwoDimensions>true</TwoDimensions>
+          <Frequency>0.07</Frequency>
+          <Amplitude>1</Amplitude>
+          <Size>1</Size>
+        </Parameter>
       </CustomTerrainParameters>
+
 
 
       <MineablesOverride>

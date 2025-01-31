@@ -33,9 +33,9 @@
 		<ParticleId Value="Rain"/>
 		<CoolDown Min="1" Max="2"/>
 		<StartDelay Min="0" Max="0"/>
-		<Duration Min="180" Max="300"/>
+		<Duration Min="180" Max="600"/>
 		<SolarRatio Value="0.5"/>
-		<WindStrength Value="3"/>
+		<WindStrength Value="2"/>
 		<MovementSpeedMultiplier Value="0.5"/>
 		<DamageMultiplier Value="0.5"/>
 		<Fog StartDistance="15" EndDistance="180">
@@ -55,7 +55,7 @@
   <WeatherEvent Id="TitanSnowStorm">
     <Name Value="Snow Storm"/>
     <ParticleId Value="SnowStorm"/>
-    <CoolDown Min="1" Max="3"/>
+    <CoolDown Min="1" Max="2"/>
     <StartDelay Min="120" Max="240"/>
     <Duration Min="180" Max="600"/>
     <Fog>
