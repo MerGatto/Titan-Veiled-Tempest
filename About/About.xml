@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>ToxicTitan</Name>
+  <Name>Titan: Veiled Tempest</Name>
   <Author>MerGatto</Author>
-  <Version>0.1.0</Version>
+  <Version>0.2.0</Version>
   <Description>
-    [h1]ToxicTitan[/h1]
+    [h1]Titan: Veiled Tempest[/h1]
     [b]WARNING:[/b] This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.
     See: https://github.com/jixxed/StationeersMods
 
     [h2]Description[/h2]
-    ToxicTitan is my attempt at creating a more challenging alternative to Europa, inspired by [b]vivi[/b] and [b]murk[/b]. This version features two different weather events:
+    'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by [b]vivi[/b] and [b]murk[/b]. This version features two different weather events:
     [list]
     [*][b]Acid Methane Rain (Volatiles)[/b] - Most commonly occurring.
     [*][b]Snow Storms[/b] - Less frequent but still hazardous.

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <OreVein Id="TitanVTCoalVein" Type="Coal" Weight="10" MaxSize="20" MaxDepth="30" MinDropQuantity="2" MaxDropQuantity="5" MiningTime="3">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="5"/>
+            <Depth Value="1" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1"/>
+        <Thickness Value="2"/>
+    </OreVein>
+    <OreVein Id="TitanVTCoalSurface" Type="Coal" Weight="10" MaxSize="20" MaxDepth="30" MinDropQuantity="2" MaxDropQuantity="5" MiningTime="3">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="1"/>
+        <Momentum Value="1"/>
+        <Thickness Value="2"/>
+    </OreVein>
+    <OreVein Id="TitanVTNitriceSurface" Type="Nitrice" Weight="80" MaxSize="60" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="0" Y="-1" Z="0" Value="0.7"/>
+        <BranchAttempts Value="9"/>
+    </OreVein>
+    <OreVein Id="TitanVTNitriceVein" Type="Nitrice" Weight="80" MaxSize="60" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="9"/>
+            <Depth Value="2" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value = "1">
+            <Depth Value="0" Mul="0"/>
+            <Depth Value="2" Mul="1"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="TitanVTIceSurface" Type="Ice" Weight="10" MaxSize="30" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10"  MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="3"/>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="TitanVTIceVein" Type="Ice" Weight="10" MaxSize="40" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10"  MiningTime="2">
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="3"/>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="TitanVTOxiteSurface" Type="Oxite" Weight="5" MaxSize="20" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <SeekSurface Value="true"/>
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <OreVein Id="TitanVTOxiteVein" Type="Oxite" Weight="5" MaxSize="20" MaxDepth="15" MinDropQuantity="5" MaxDropQuantity="10" MiningTime="2">
+        <Direction X="1" Y="0" Z="1" Value="0.7">
+            <Depth Value="0" Mul="1"/>
+            <Depth Value="6" Mul="0"/>
+        </Direction>
+        <BranchAttempts Value="1">
+            <Depth Value="0" Mul="3"/>
+            <Depth Value="8" Mul="1"/>
+        </BranchAttempts>
+        <Momentum Value="1">
+            <Depth Value="0" Mul="0.1"/>
+            <Depth Value="7" Mul="0.5"/>
+        </Momentum>
+    </OreVein>
+    <Minables Id="TitanVTMinables" OreDensity="1.8">
+        <OreVein Id="DefaultIronVein"/>
+        <OreVein Id="TitanVTIceVein"/>
+        <OreVein Id="TitanVTOxiteVein"/>
+        <OreVein Id="DefaultVolatilesVein"/>
+        <OreVein Id="DefaultCopperVein"/>
+        <OreVein Id="DefaultGoldVein"/>
+        <OreVein Id="TitanVTCoalVein"/>
+        <OreVein Id="DefaultSiliconVein"/>
+        <OreVein Id="DefaultCobaltVein"/>
+        <OreVein Id="DefaultSilverVein"/>
+        <OreVein Id="TitanVTNitriceVein"/>
+        <OreVein Id="DefaultNickelVein"/>
+        <OreVein Id="DefaultLeadVein"/>
+    </Minables>
+    <Minables Id="TitanVTMinablesSurface" OreDensity="1.2">
+        <OreVein Id="IronSurface"/>
+        <OreVein Id="TitanVTIceSurface"/>
+        <OreVein Id="TitanVTOxiteSurface"/>
+        <OreVein Id="VolatilesSurface"/>
+        <OreVein Id="CopperSurface"/>
+        <OreVein Id="GoldSurface"/>
+        <OreVein Id="TitanVTCoalSurface"/>
+        <OreVein Id="SiliconSurface"/>
+        <OreVein Id="CobaltSurface"/>
+        <OreVein Id="SilverSurface"/>
+        <OreVein Id="TitanVTNitriceSurface"/>
+        <OreVein Id="NickelSurface"/>
+        <OreVein Id="LeadSurface"/>
+    </Minables>
+</GameData>

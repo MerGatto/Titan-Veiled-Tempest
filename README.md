@@ -1,16 +1,16 @@
-# ToxicTitan
+# Titan: Veiled Tempest
 
 **WARNING:** This is a StationeersMods Plugin Mod. It requires BepInEx to be installed with the StationeersMods plugin.  
 See: [StationeersMods](https://github.com/jixxed/StationeersMods)
 
 ## Description
-ToxicTitan is my attempt at creating a more challenging alternative to Europa, inspired by *vivi* and *murk*. This version features two different weather events:
+'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by *vivi* and *murk*. This version features two different weather events:
 - **Acid Methane Rain (Volatiles)** - Most commonly occurring.
 - **Snow Storms** - Less frequent but still hazardous.
 
-These world settings can function independently, but for the intended experience, installing [StationeersMods](https://github.com/jixxed/StationeersMods) is recommended.
+These world settings can function independently, but for the intended experience, installing [StationeersLaunchPad](https://github.com/StationeersLaunchPad/StationeersLaunchPad) is required.
 
-## Features with StationeersMods Installed
+## Features with StationeersLaunchPad Installed
 - The **first weather event** occurs **after 1 day** instead of 7.
 - The **first weather event** is always **Acid Rain**.
 - **Acid Rain** and **Snow Storms** do *not* trigger forced follow-up events (e.g., 'Regular' rain).

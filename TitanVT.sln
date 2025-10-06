@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToxicTitan", "ToxicTitan.csproj", "{7B51AA19-2108-45C3-9A69-B9994C8BFFF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TitanVeiledTempest", "TitanVeiledTempest.csproj", "{7B51AA19-2108-45C3-9A69-B9994C8BFFF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B614CC1-68DF-4A37-89A4-BB65741CE4B7}
 	EndGlobalSection
 EndGlobal

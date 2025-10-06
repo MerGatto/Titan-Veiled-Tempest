@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-  <StartCondition Id="TitanDefault">
-    <Name Key="DefaultStartConditionTitan"/>
+  <StartCondition Id="TitanVTDefault">
+    <Name Key="DefaultStartConditionTitanVT"/>
     <Description Key="DefaultStartConditionDescription"/>
     <PreviewButton Path="Interface/button_starting_standard.png" Format="RGB24"/>
 
-    <Spawn Id="FuelTankInsulated" Event="NewWorld" />
     <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
-    <Spawn Id="TitanLander" Event="NewWorld" />
+    <Spawn Id="TitanVTLander" Event="NewWorld" />
     <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit" />
     <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit" />
   </StartCondition>
 
-  <StartCondition Id="TitanBrutal" IsBrutal="true">
-    <Name Key="BrutalStartConditionTitan"/>
+  <StartCondition Id="TitanVTBrutal" IsBrutal="true">
+    <Name Key="BrutalStartConditionTitanVT"/>
     <Description Key="BrutalStartConditionDescription"/>
     <PreviewButton Path="Interface/button_starting_brutal.png" Format="RGB24"/>
 
     <Spawn Id="LanderCapsuleSmall" Event="NewPlayer" />
-    <Spawn Id="BrutalCrateTitan" Event="NewWorld" />
+    <Spawn Id="BrutalCrateTitanVT" Event="NewWorld" />
     <Spawn Id="OxygenTankInsulated" Event="NewWorld"/>
     <Spawn Id="DefaultNewPlayer" Event="NewPlayerKit"/>
     <Spawn Id="DefaultRespawnPlayer" Event="RespawnPlayerKit"/>
   </StartCondition>
 
-  <Spawn Id="TitanLander">
-    <DynamicThing Id="Lander" ExpandInStartScreen="true">
-      <SpawnPosition Rule="Radial"/>
-      <Color Id="Red"/>
+  <Spawn Id="TitanVTLander">
+    <DynamicThing Id="LanderMkII" ExpandInStartScreen="true">
+      <SpawnPosition Rule="None"/>
       <Spawn Id="OxygenTankInsulated"/>
       <Spawn Id="WaterTankInsulated"/>
+      <Spawn Id="FuelTankInsulated" />
       <Spawn Id="ConstructionSuppliesVulcan"/>
-      <Spawn Id="ElectricalSuppliesTitan"/>
+      <Spawn Id="ElectricalSuppliesTitanVT"/>
       <Spawn Id="AdvancedAirlockSuppliesVulcan"/>
       <Spawn Id="SurvivalSuppliesVulcan"/>
       <Spawn Id="HydroponicsSuppliesVenus"/>
@@ -40,7 +39,7 @@
     </DynamicThing>
   </Spawn>
 
-  <Spawn Id="ElectricalSuppliesTitan">
+  <Spawn Id="ElectricalSuppliesTitanVT">
     <DynamicThing Id="CrateMkII">
       <Name Value="Electrical Supplies"/>
       <Color Id="Orange"/>
@@ -74,7 +73,7 @@
     </DynamicThing>
   </Spawn>
 
-  <Spawn Id="BrutalCrateTitan">
+  <Spawn Id="BrutalCrateTitanVT">
     <DynamicThing Id="DynamicCrate" ExpandInStartScreen="true">
       <Name Value="Minimum Supplies"/>
       <Color Id="Yellow"/>
@@ -85,7 +84,7 @@
       <Item Id="ItemIronSheets">
         <Quantity Value="40"/>
       </Item>
-      <Spawn Id="PowerPackageTitan"/>
+      <Spawn Id="PowerPackageTitanVT"/>
       <Spawn Id="ProductionPackage"/>
       <Spawn Id="CerealBarBox"/>
       <Spawn Id="WaterBottlePackage"/>
@@ -94,21 +93,9 @@
       </Item>
       <Spawn Id="WaterCanisterPackaged"/>
     </DynamicThing>
-    <Item Id="ItemWreckage1" HideInStartScreen="true"/>
-    <Item Id="ItemWreckage2" HideInStartScreen="true"/>
-    <Item Id="ItemWreckage3" HideInStartScreen="true"/>
-    <Item Id="ItemWreckage4" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageArcFurnace1" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageAutolathe1" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageAutolathe6" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageCoalGenerator1" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageCoalGenerator4" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageElevatorShaftIndustrial3" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageSolarPanel2" HideInStartScreen="true"/>
-    <Item Id="ItemWreckageSolarPanel1" HideInStartScreen="true"/>
   </Spawn>
 
-  <Spawn Id="PowerPackageTitan">
+  <Spawn Id="PowerPackageTitanVT">
     <Item Id="ItemPortablesPackage">
       <Name Value="Basic Wind Power Package"/>
       <Item Id="ItemAreaPowerControl">

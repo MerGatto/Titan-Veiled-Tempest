@@ -6,22 +6,22 @@
     <Font>font_english</Font>
     <Interface>
       <Record>
-        <Key>NewWorldAreaToxicTitan</Key>
-        <Value>Titan</Value>
+        <Key>NewWorldAreaTitanVT</Key>
+        <Value>Titan: Veiled Tempest</Value>
       </Record>
       <Record>
-          <Key>NewWorldDescriptionToxicTitan</Key>
+          <Key>NewWorldDescriptionTitanVT</Key>
           <Value>
             Titan, Saturn's largest moon, is a frozen, methane-rich world with treacherous storms and toxic rain, offering both danger and potential for human survival.
           </Value>
       </Record>
 
         <Record>
-            <Key>DefaultStartConditionTitan</Key>
+            <Key>DefaultStartConditionTitanVT</Key>
             <Value>Default (Titan)</Value>
         </Record>
         <Record>
-            <Key>BrutalStartConditionTitan</Key>
+            <Key>BrutalStartConditionTitanVT</Key>
             <Value>Brutal (Titan)</Value>
         </Record>
     </Interface>
