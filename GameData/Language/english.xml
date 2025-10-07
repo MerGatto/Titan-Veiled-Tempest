@@ -15,6 +15,10 @@
             Titan, Saturn's largest moon, is a frozen, methane-rich world with treacherous storms and toxic rain, offering both danger and potential for human survival.
           </Value>
       </Record>
+      <Record>
+        <Key>TitanVTWorldDescriptionShort</Key>
+        <Value>Titan, Saturn's largest moon, is a frozen, methane-rich world with treacherous storms and toxic rain</Value>
+      </Record>
 
         <Record>
             <Key>DefaultStartConditionTitanVT</Key>

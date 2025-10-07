@@ -1,10 +1,10 @@
 # Titan: Veiled Tempest
 
-**WARNING:** This is a StationeersMods Plugin Mod. It requires BepInEx to be installed with the StationeersMods plugin.  
-See: [StationeersMods](https://github.com/jixxed/StationeersMods)
+**WARNING:** This is a Plugin Mod. It requires BepInEx to be installed with the StationeersLaunchPad plugin.
+See: [StationeersLaunchPad](https://github.com/StationeersLaunchPad/StationeersLaunchPad)
 
 ## Description
-'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by *vivi* and *murk*. This version features two different weather events:
+'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by other Titan versions by *Vivien* and *murk*. This version features two different weather events:
 - **Acid Methane Rain (Volatiles)** - Most commonly occurring.
 - **Snow Storms** - Less frequent but still hazardous.
 
@@ -25,12 +25,16 @@ For an added challenge, consider using **Free Lunch's Structure Thermodynamics m
 - **Coal is rare on the surface** but can be found using **deep miners**.
 - **Oxite ice is scarce**, but **Nitric ice can substitute** for furnace usage.
 - **Leverage the cold atmosphere**—**Gas Fuel Generators** are easier to set up.
+- 
+## Disclaimer
+The Terrain Data for this world is currently just a copy of Europa
+Map layout, Spawn Points, Named Regions and Deep Mining Regions are therefore exactly the same as on Europa.
+In later updates I might include my own terrain data.
 
 ## Credits
-- **vivi** - [Steam Profile](https://steamcommunity.com/profiles/76561198187662981/)
-- **murk** - [Steam Profile](https://steamcommunity.com/id/iammurk)
-- **jixxed** - Creator of [StationeersMods](https://github.com/jixxed/StationeersMods)
+- [Vivien](https://steamcommunity.com/profiles/76561198187662981/) and [murk](https://steamcommunity.com/id/iammurk) for the original inspiration
 - **pardeike** - Creator of [Harmony](https://github.com/pardeike)
+- And all the awesome maintainers of [StationeersLaunchPad](https://github.com/StationeersLaunchPad/StationeersLaunchPad)
 
 ---
 Enjoy the challenge! Feel free to contribute or provide feedback!

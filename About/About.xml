@@ -5,18 +5,18 @@
   <Version>0.2.0</Version>
   <Description>
     [h1]Titan: Veiled Tempest[/h1]
-    [b]WARNING:[/b] This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.
-    See: https://github.com/jixxed/StationeersMods
+    [b]WARNING:[/b] This is a Plugin Mod. It requires BepInEx to be installed with the StationeersLaunchPad plugin.
+    See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
     [h2]Description[/h2]
-    'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by [b]vivi[/b] and [b]murk[/b]. This version features two different weather events:
+    'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by other Titan versions by [b]Vivien[/b] and [b]murk[/b]. This version features two different weather events:
     [list]
     [*][b]Acid Methane Rain (Volatiles)[/b] - Most commonly occurring.
     [*][b]Snow Storms[/b] - Less frequent but still hazardous.
     [/list]
-    These world settings can function independently, but for the intended experience, installing [url="https://github.com/jixxed/StationeersMods"]StationeersMods[/url] is recommended.
+    These world settings can function independently, but for the intended experience, installing [url="https://github.com/StationeersLaunchPad/StationeersLaunchPad"]StationeersLaunchPad[/url] is required.
 
-    [h3]Features with StationeersMods Installed[/h3]
+    [h3]Features with StationeersLaunchpad Installed[/h3]
     [list]
     [*]The [b]first weather event[/b] occurs [b]after 1 day[/b] instead of 7.
     [*]The [b]first weather event[/b] is always [b]Acid Rain[/b].
@@ -35,35 +35,48 @@
     [*][b]Leverage the cold atmosphere[/b]—[b]Gas Fuel Generators[/b] are easier to set up.
     [/list]
 
+    [h2]Disclaimer[/h3]
+    The Terrain Data for this world is currently just a copy of Europa
+    Map layout, Spawn Points, Named Regions and Deep Mining Regions are therefore exactly the same as on Europa.
+    In later updates I might include my own terrain data.
+
     [h2]Credits[/h2]
     [list]
-    [*][b]vivi[/b] -  [url=https://steamcommunity.com/profiles/76561198187662981/]Steam Profile[/url]
-    [*][b]murk[/b] -  [url=https://steamcommunity.com/id/iammurk]Steam Profile[/url]
-    [*][b]jixxed[/b] - Creator of  [url=https://github.com/jixxed/StationeersMods]StationeersMods[/url]
-    [*][b]pardeike[/b] - Creator of  [url=https://github.com/pardeike]Harmony[/url]
+    [*][url=https://steamcommunity.com/profiles/76561198187662981/]Vivien[/url] and [url=https://steamcommunity.com/id/iammurk]murk[/url] for the original inspiration
+    [*][b]pardeike[/b] - Creator of [url=https://github.com/pardeike]Harmony[/url]
+    [*]and all the awesome maintainers of [url=https://github.com/StationeersLaunchPad/StationeersLaunchPad[/url]
     [/list]
 
     [b]Enjoy the challenge![/b] Feel free to contribute or provide feedback!
   </Description>
     <InGameDescription>
     <![CDATA[<size="30"><color=#ffa500> ToxicTitan </color></size>
-<b>WARNING:</b> <color=#ff0000>This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.</color>
-See: https://github.com/jixxed/StationeersMods
+<b>WARNING:</b> <color=#ff0000>This is a StationeersLaunchPad Plugin Mod. It requires Bepinex to be installed with the StationeersLaunchPad plugin.</color>
+See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
 Titan, Saturn's largest moon, is a frozen, methane-rich world with treacherous storms and toxic rain, offering both danger and potential for human survival.
 ]]>
   </InGameDescription>
     <ChangeLog>
-    [h3]Version 0.1.0:[/h3]
-    [list]
-    [*]Initial release
-    [/list]
-  </ChangeLog>
+      [h3]Version 0.2.0:[/h3]
+      [list]
+      [*] Updated for the 'Biggest Update Ever', using a copy of Europa for terrain data
+      [*] Renamed mod to 'Titan: Veiled' tempest to have a naming more in line with vanilla worlds
+      [*] Migrated to StationeerLaunchpad
+
+
+      [/list]
+      [h3]Version 0.1.0:[/h3]
+      [list]
+      [*]Initial release
+      [/list]
+    </ChangeLog>
   <WorkshopHandle>3418110764</WorkshopHandle>
   <Tags>
     <Tag>World Settings</Tag>
+    <Tag>Mod</Tag>
     <Tag>Start Conditions</Tag>
-    <Tag>StationeersMods</Tag>
+    <Tag>StationeersLaunchPad</Tag>
   </Tags>
   <LoadBefore>
     <ModId>1</ModId>

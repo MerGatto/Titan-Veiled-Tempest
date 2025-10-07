@@ -5,13 +5,14 @@
     <World Id="TitanVT">
       <Name Key="NewWorldAreaTitanVT" />
       <Description Key="NewWorldDescriptionTitanVT" />
+      <ShortDescription Key="TitanVTWorldDescriptionShort"/>
       <Rating Value="Challenging" Color="Orange" />
       <PreviewButton Path="GameData/Interface/preview_titan.png" Format="RGB24" />
 
 
       <StartCondition Id="TitanVTDefault" IsDefault="true" />
       <StartCondition Id="TitanVTBrutal" />
-	  <StartCondition Id="TerrainEdit"/>
+      <StartCondition Id="TerrainEdit"/>
 
       <!--todo add helper hints?-->
       <WorldObjective Id="ManufacturingBasics" />
@@ -24,7 +25,7 @@
       <SkyBoxMaterialName>EuropaSky</SkyBoxMaterialName>
       <SetSunInSkybox>true</SetSunInSkybox>
       <SunPrefabName>MimasSun</SunPrefabName>
-      <MaxSunIntensity>0.8</MaxSunIntensity>
+      <MaxSunIntensity>0.9</MaxSunIntensity>
       <Gravity>-1.35</Gravity>
       <StartingCondition>Default</StartingCondition>
       <Minables Id="TitanVTMinablesSurface">
@@ -32,345 +33,345 @@
       </Minables>
       <Minables Id="TitanVTMinables">
         <Surface Value="false"/>
-       </Minables>
-            
-            <PlayableArea Id="TitanWarningArea" Rule="Warning">
-                <Region Id="TitanLeavingArea"/>
-            </PlayableArea>
-            <PlayableArea Id="TitanInvalidArea" Rule="Invalid">
-                <Region Id="TitanOutOfBounds"/>
-            </PlayableArea>
+      </Minables>
 
-            <StartLocation Id="TitanSpawnIcyBasin">
-                <Name Key="EuropaSpawnIcyBasinName"/>
-                <Description Key="EuropaSpawnIcyBasinDescription"/>
-                <Position x="145" y="-503"/>
-            </StartLocation>
-            <StartLocation Id="TitanSpawnGlacialChannel">
-                <Name Key="EuropaSpawnGlacialChannelName"/>
-                <Description Key="EuropaSpawnGlacialChannelDescription"/>
-                <Position x="1358" y="-601"/>
-            </StartLocation>
-            <StartLocation Id="TitanSpawnBalgatanPass">
-                <Name Key="EuropaSpawnBalgatanPassName"/>
-                <Description Key="EuropaSpawnBalgatanPassDescription"/>
-                <Position x="-1076" y="445"/>
-            </StartLocation>
-            <StartLocation Id="TitanSpawnFrigidHighlands">
-                <Name Key="EuropaSpawnFrigidHighlandsName"/>
-                <Description Key="EuropaSpawnFrigidHighlandsDescription"/>
-                <Position x="-1424" y="-602"/>
-            </StartLocation>
-            <StartLocation Id="TitanSpawnTyreValley">
-                <Name Key="EuropaSpawnTyreValleyName"/>
-                <Description Key="EuropaSpawnTyreValleyDescription"/>
-                <Position x="1197" y="999"/>
-            </StartLocation>
+      <PlayableArea Id="TitanWarningArea" Rule="Warning">
+        <Region Id="TitanLeavingArea"/>
+      </PlayableArea>
+      <PlayableArea Id="TitanInvalidArea" Rule="Invalid">
+        <Region Id="TitanOutOfBounds"/>
+      </PlayableArea>
 
-            <RegionSet Id="TitanPlayableBounds">
-                <Texture Path="GameData/Worlds/TitanVT/Textures/4KMissionArea.png" Format="RGB24" LoadType="OnRequest"/>
-                <Region Id="TitanValidPlayArea" R="0" G="255" B="0"/>
-                <Region Id="TitanOutOfBounds" R="255" G="0" B="0"/>
-                <Region Id="TitanLeavingArea" R="0" G="0" B="255"/>
-            </RegionSet>
-            
-            <RegionSet Id="TitanNamedRegions">
-                <Texture Path="GameData/Worlds/TitanVT/Textures/europa_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
-                <Region Id="TitanNamedRegionTyreSlope" R="214" G="162" B="219">
-                    <Name Key="EuropaNamedRegionTyreSlopeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionIceDesert" R="217" G="114" B="106">
-                    <Name Key="EuropaNamedRegionIceDesertName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthEastRange" R="210" G="128" B="219">
-                    <Name Key="EuropaNamedRegionNorthEastRangeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthernTrough" R="255" G="83" B="68">
-                    <Name Key="EuropaNamedRegionNorthernTroughName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthRange" R="198" G="68" B="212">
-                    <Name Key="EuropaNamedRegionNorthRangeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthWestRange" R="237" G="71" B="255">
-                    <Name Key="EuropaNamedRegionNorthWestRangeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionTheDitch" R="65" G="117" B="177">
-                    <Name Key="EuropaNamedRegionTheDitchName"/>
-                </Region>
-                <Region Id="TitanNamedRegionBasinView" R="0" G="106" B="167">
-                    <Name Key="EuropaNamedRegionBasinViewName"/>
-                </Region>
-                <Region Id="TitanNamedRegionSouthernRanges" R="97" G="65" B="158">
-                    <Name Key="EuropaNamedRegionSouthernRangesName"/>
-                </Region>
-                <Region Id="TitanNamedRegionRupertsRest" R="135" G="105" B="188">
-                    <Name Key="EuropaNamedRegionRupertsRestName"/>
-                </Region>
-                <Region Id="TitanNamedRegionPerpetuity" R="152" G="95" B="172">
-                    <Name Key="EuropaNamedRegionPerpetuityName"/>
-                </Region>
-                <Region Id="TitanNamedRegionRupertsRange" R="198" G="87" B="238">
-                    <Name Key="EuropaNamedRegionRupertsRangeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionRupertsValley" R="123" G="62" B="145">
-                    <Name Key="EuropaNamedRegionRupertsValleyName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGlacialFingerWest" R="0" G="117" B="70">
-                    <Name Key="EuropaNamedRegionGlacialFingerWestName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGlacialFingerEast" R="0" G="139" B="13">
-                    <Name Key="EuropaNamedRegionGlacialFingerEastName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGlacialFingerSouth" R="0" G="89" B="31">
-                    <Name Key="EuropaNamedRegionGlacialFingerSouthName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGlacialFingerNorth" R="17" G="255" B="0">
-                    <Name Key="EuropaNamedRegionGlacialFingerNorthName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGrandBasinWest" R="255" G="0" B="0">
-                    <Name Key="EuropaNamedRegionGrandBasinWestName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGrandBasinSouth" R="200" G="45" B="45">
-                    <Name Key="EuropaNamedRegionGrandBasinSouthName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGrandBasinEast" R="182" G="0" B="0">
-                    <Name Key="EuropaNamedRegionGrandBasinEastName"/>
-                </Region>
-                <Region Id="TitanNamedRegionGrandBasinNorth" R="229" G="54" B="92">
-                    <Name Key="EuropaNamedRegionGrandBasinNorthName"/>
-                </Region>
-                <Region Id="TitanNamedRegionEastBalgatanRange" R="57" G="121" B="209">
-                    <Name Key="EuropaNamedRegionEastBalgatanRangeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionWestBalgatanRange" R="101" G="145" B="255">
-                    <Name Key="EuropaNamedRegionWestBalgatanRangeName"/>
-                </Region>
-                <Region Id="TitanNamedRegionTyreValley" R="255" G="121" B="68">
-                    <Name Key="EuropaNamedRegionTyreValleyName"/>
-                </Region>
-                <Region Id="TitanNamedRegionMorensCrossing" R="53" G="132" B="249">
-                    <Name Key="EuropaNamedRegionMorensCrossingName"/>
-                </Region>
-                <Region Id="TitanNamedRegionWesternIceFlats" R="0" G="72" B="255">
-                    <Name Key="EuropaNamedRegionWesternIceFlatsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionEasternIceFlats" R="35" G="171" B="255">
-                    <Name Key="EuropaNamedRegionEasternIceFlatsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionTheWall" R="255" G="0" B="217">
-                    <Name Key="EuropaNamedRegionTheWallName"/>
-                </Region>
-                <Region Id="TitanNamedRegionCrescentValley" R="212" G="233" B="94">
-                    <Name Key="EuropaNamedRegionCrescentValleyName"/>
-                </Region>
-                <Region Id="TitanNamedRegionSouthEastHighlands" R="255" G="234" B="0">
-                    <Name Key="EuropaNamedRegionSouthEastHighlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthEastHighlands" R="213" G="255" B="1">
-                    <Name Key="EuropaNamedRegionNorthEastHighlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionSouthWestHighlands" R="128" G="154" B="0">
-                    <Name Key="EuropaNamedRegionSouthWestHighlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthWestHighlands" R="154" G="141" B="0">
-                    <Name Key="EuropaNamedRegionNorthWestHighlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionHeavensVault" R="150" G="156" B="28">
-                    <Name Key="EuropaNamedRegionHeavensVaultName"/>
-                </Region>
-                <Region Id="TitanNamedRegionBalgatanPass" R="72" G="0" B="255">
-                    <Name Key="EuropaNamedRegionBalgatanPassName"/>
-                </Region>
-                <Region Id="TitanNamedRegionPilgrimsPath" R="203" G="130" B="211">
-                    <Name Key="EuropaNamedRegionPilgrimsPathName"/>
-                </Region>
-                <Region Id="TitanNamedRegionNorthWestOutlands" R="175" G="74" B="212">
-                    <Name Key="EuropaNamedRegionNorthWestOutlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionSouthWestOutlands" R="191" G="0" B="255">
-                    <Name Key="EuropaNamedRegionSouthWestOutlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionSouthEastOutlands" R="107" G="31" B="135">
-                    <Name Key="EuropaNamedRegionSouthEastOutlandsName"/>
-                </Region>
-                <Region Id="TitanNamedRegionSouthOutlands" R="144" G="33" B="184">
-                    <Name Key="EuropaNamedRegionSouthOutlandsName"/>
-                </Region>
-            </RegionSet>
+      <StartLocation Id="TitanVTSpawnIcyBasin">
+        <Name Key="EuropaSpawnIcyBasinName"/>
+        <Description Key="EuropaSpawnIcyBasinDescription"/>
+        <Position x="145" y="-503"/>
+      </StartLocation>
+      <StartLocation Id="TitanVTSpawnGlacialChannel">
+        <Name Key="EuropaSpawnGlacialChannelName"/>
+        <Description Key="EuropaSpawnGlacialChannelDescription"/>
+        <Position x="1358" y="-601"/>
+      </StartLocation>
+      <StartLocation Id="TitanVTSpawnBalgatanPass">
+        <Name Key="EuropaSpawnBalgatanPassName"/>
+        <Description Key="EuropaSpawnBalgatanPassDescription"/>
+        <Position x="-1076" y="445"/>
+      </StartLocation>
+      <StartLocation Id="TitanVTSpawnFrigidHighlands">
+        <Name Key="EuropaSpawnFrigidHighlandsName"/>
+        <Description Key="EuropaSpawnFrigidHighlandsDescription"/>
+        <Position x="-1424" y="-602"/>
+      </StartLocation>
+      <StartLocation Id="TitanVTSpawnTyreValley">
+        <Name Key="EuropaSpawnTyreValleyName"/>
+        <Description Key="EuropaSpawnTyreValleyDescription"/>
+        <Position x="1197" y="999"/>
+      </StartLocation>
 
-            <RegionSet Id="TitanPoiRegions">
-                <Texture Path="GameData/Worlds/TitanVT/Textures/europa_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
-                <Region Id="TitanPoiRegionCallanishPeak" R="0" G="250" B="0"/>
-                <Region Id="TitanPoiRegionFalgasDescent" R="125" G="0" B="125"/>
-                <Region Id="TitanPoiRegionBalgatanRidge" R="0" G="125" B="250"/>
-                <Region Id="TitanPoiRegionSouthCallanishPass" R="125" G="125" B="0"/>
-                <Region Id="TitanPoiRegionSidonGully" R="125" G="125" B="250"/>
-                <Region Id="TitanPoiRegionMorensFell" R="0" G="0" B="125"/>
-                <Region Id="TitanPoiRegionBluePeak" R="0" G="0" B="250"/>
-                <Region Id="TitanPoiRegionAncientLake" R="0" G="125" B="0"/>
-                <Region Id="TitanPoiRegionSnowDuneValley" R="0" G="125" B="125"/>
-                <Region Id="TitanPoiRegionHighMountain" R="0" G="250" B="125"/>
-                <Region Id="TitanPoiRegionErodedChasm" R="0" G="250" B="250"/>
-                <Region Id="TitanPoiRegionNeedlePeak" R="125" G="0" B="0"/>
-                <Region Id="TitanPoiRegionGlacialTrack" R="125" G="0" B="250"/>
-                <Region Id="TitanPoiRegionPlainsSentinel" R="125" G="125" B="125"/>
-                <Region Id="TitanPoiRegionSharpOverlook" R="125" G="250" B="0"/>
-                <Region Id="TitanPoiRegionDuneField" R="125" G="250" B="125"/>
-            </RegionSet>
+      <RegionSet Id="TitanVTPlayableBounds">
+        <Texture Path="GameData/Worlds/TitanVT/Textures/4KMissionArea.png" Format="RGB24" LoadType="OnRequest"/>
+        <Region Id="TitanVTValidPlayArea" R="0" G="255" B="0"/>
+        <Region Id="TitanVTOutOfBounds" R="255" G="0" B="0"/>
+        <Region Id="TitanVTLeavingArea" R="0" G="0" B="255"/>
+      </RegionSet>
 
-            <RegionSet Id="TitanDeepMiningRegions">
-                <Texture Path="GameData/Worlds/TitanVT/Textures/europa_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
-                <Region Id="TitanDeepMiningRegionCoal" R="255" G="0" B="239"/>
-                <Region Id="TitanDeepMiningRegionNickel" R="184" G="0" B="255"/>
-                <Region Id="TitanDeepMiningRegionGold" R="0" G="66" B="255"/>
-                <Region Id="TitanDeepMiningRegionSilver" R="0" G="153" B="255"/>
-                <Region Id="TitanDeepMiningRegionLead" R="0" G="237" B="255"/>
-                <Region Id="TitanDeepMiningRegionIronCopperSilicon" R="0" G="255" B="180"/>
-                <Region Id="TitanDeepMiningRegionCobalt" R="119" G="255" B="0"/>
-                <Region Id="TitanDeepMiningRegionGoldSilver" R="255" G="255" B="0"/>
-                <Region Id="TitanDeepMiningRegionSilverLeadNickel" R="255" G="194" B="0"/>
-                <Region Id="TitanDeepMiningRegionIron" R="255" G="129" B="0"/>
-                <Region Id="TitanDeepMiningRegionSilicon" R="255" G="8" B="0"/>
-            </RegionSet>
+      <RegionSet Id="TitanVTNamedRegions">
+        <Texture Path="GameData/Worlds/TitanVT/Textures/europa_named_regions.png" Format="RGB24" LoadType="OnRequest"/>
+        <Region Id="TitanVTNamedRegionTyreSlope" R="214" G="162" B="219">
+          <Name Key="EuropaNamedRegionTyreSlopeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionIceDesert" R="217" G="114" B="106">
+          <Name Key="EuropaNamedRegionIceDesertName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthEastRange" R="210" G="128" B="219">
+          <Name Key="EuropaNamedRegionNorthEastRangeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthernTrough" R="255" G="83" B="68">
+          <Name Key="EuropaNamedRegionNorthernTroughName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthRange" R="198" G="68" B="212">
+          <Name Key="EuropaNamedRegionNorthRangeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthWestRange" R="237" G="71" B="255">
+          <Name Key="EuropaNamedRegionNorthWestRangeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionTheDitch" R="65" G="117" B="177">
+          <Name Key="EuropaNamedRegionTheDitchName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionBasinView" R="0" G="106" B="167">
+          <Name Key="EuropaNamedRegionBasinViewName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionSouthernRanges" R="97" G="65" B="158">
+          <Name Key="EuropaNamedRegionSouthernRangesName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionRupertsRest" R="135" G="105" B="188">
+          <Name Key="EuropaNamedRegionRupertsRestName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionPerpetuity" R="152" G="95" B="172">
+          <Name Key="EuropaNamedRegionPerpetuityName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionRupertsRange" R="198" G="87" B="238">
+          <Name Key="EuropaNamedRegionRupertsRangeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionRupertsValley" R="123" G="62" B="145">
+          <Name Key="EuropaNamedRegionRupertsValleyName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGlacialFingerWest" R="0" G="117" B="70">
+          <Name Key="EuropaNamedRegionGlacialFingerWestName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGlacialFingerEast" R="0" G="139" B="13">
+          <Name Key="EuropaNamedRegionGlacialFingerEastName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGlacialFingerSouth" R="0" G="89" B="31">
+          <Name Key="EuropaNamedRegionGlacialFingerSouthName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGlacialFingerNorth" R="17" G="255" B="0">
+          <Name Key="EuropaNamedRegionGlacialFingerNorthName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGrandBasinWest" R="255" G="0" B="0">
+          <Name Key="EuropaNamedRegionGrandBasinWestName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGrandBasinSouth" R="200" G="45" B="45">
+          <Name Key="EuropaNamedRegionGrandBasinSouthName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGrandBasinEast" R="182" G="0" B="0">
+          <Name Key="EuropaNamedRegionGrandBasinEastName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionGrandBasinNorth" R="229" G="54" B="92">
+          <Name Key="EuropaNamedRegionGrandBasinNorthName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionEastBalgatanRange" R="57" G="121" B="209">
+          <Name Key="EuropaNamedRegionEastBalgatanRangeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionWestBalgatanRange" R="101" G="145" B="255">
+          <Name Key="EuropaNamedRegionWestBalgatanRangeName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionTyreValley" R="255" G="121" B="68">
+          <Name Key="EuropaNamedRegionTyreValleyName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionMorensCrossing" R="53" G="132" B="249">
+          <Name Key="EuropaNamedRegionMorensCrossingName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionWesternIceFlats" R="0" G="72" B="255">
+          <Name Key="EuropaNamedRegionWesternIceFlatsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionEasternIceFlats" R="35" G="171" B="255">
+          <Name Key="EuropaNamedRegionEasternIceFlatsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionTheWall" R="255" G="0" B="217">
+          <Name Key="EuropaNamedRegionTheWallName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionCrescentValley" R="212" G="233" B="94">
+          <Name Key="EuropaNamedRegionCrescentValleyName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionSouthEastHighlands" R="255" G="234" B="0">
+          <Name Key="EuropaNamedRegionSouthEastHighlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthEastHighlands" R="213" G="255" B="1">
+          <Name Key="EuropaNamedRegionNorthEastHighlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionSouthWestHighlands" R="128" G="154" B="0">
+          <Name Key="EuropaNamedRegionSouthWestHighlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthWestHighlands" R="154" G="141" B="0">
+          <Name Key="EuropaNamedRegionNorthWestHighlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionHeavensVault" R="150" G="156" B="28">
+          <Name Key="EuropaNamedRegionHeavensVaultName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionBalgatanPass" R="72" G="0" B="255">
+          <Name Key="EuropaNamedRegionBalgatanPassName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionPilgrimsPath" R="203" G="130" B="211">
+          <Name Key="EuropaNamedRegionPilgrimsPathName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionNorthWestOutlands" R="175" G="74" B="212">
+          <Name Key="EuropaNamedRegionNorthWestOutlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionSouthWestOutlands" R="191" G="0" B="255">
+          <Name Key="EuropaNamedRegionSouthWestOutlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionSouthEastOutlands" R="107" G="31" B="135">
+          <Name Key="EuropaNamedRegionSouthEastOutlandsName"/>
+        </Region>
+        <Region Id="TitanVTNamedRegionSouthOutlands" R="144" G="33" B="184">
+          <Name Key="EuropaNamedRegionSouthOutlandsName"/>
+        </Region>
+      </RegionSet>
 
-            <DeepMinables Id="DeepMinableProfileIron">
-                <Region Id="TitanDeepMiningRegionIron"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileSilicon">
-                <Region Id="TitanDeepMiningRegionSilicon"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
-                <Region Id="TitanDeepMiningRegionIronCopperSilicon"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
-                <Region Id="TitanDeepMiningRegionSilverLeadNickel"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileGoldSilver">
-                <Region Id="TitanDeepMiningRegionGoldSilver"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileSilver">
-                <Region Id="TitanDeepMiningRegionSilver"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileLead">
-                <Region Id="TitanDeepMiningRegionLead"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileNickel">
-                <Region Id="TitanDeepMiningRegionNickel"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileCoal">
-                <Region Id="TitanDeepMiningRegionCoal"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileCobalt">
-                <Region Id="TitanDeepMiningRegionCobalt"/>
-            </DeepMinables>
-            <DeepMinables Id="DeepMinableProfileGold">
-                <Region Id="TitanDeepMiningRegionGold"/>
-            </DeepMinables>
+      <RegionSet Id="TitanVTPoiRegions">
+        <Texture Path="GameData/Worlds/TitanVT/Textures/europa_poi_regions.png" Format="RGB24" LoadType="OnRequest"/>
+        <Region Id="TitanVTPoiRegionCallanishPeak" R="0" G="250" B="0"/>
+        <Region Id="TitanVTPoiRegionFalgasDescent" R="125" G="0" B="125"/>
+        <Region Id="TitanVTPoiRegionBalgatanRidge" R="0" G="125" B="250"/>
+        <Region Id="TitanVTPoiRegionSouthCallanishPass" R="125" G="125" B="0"/>
+        <Region Id="TitanVTPoiRegionSidonGully" R="125" G="125" B="250"/>
+        <Region Id="TitanVTPoiRegionMorensFell" R="0" G="0" B="125"/>
+        <Region Id="TitanVTPoiRegionBluePeak" R="0" G="0" B="250"/>
+        <Region Id="TitanVTPoiRegionAncientLake" R="0" G="125" B="0"/>
+        <Region Id="TitanVTPoiRegionSnowDuneValley" R="0" G="125" B="125"/>
+        <Region Id="TitanVTPoiRegionHighMountain" R="0" G="250" B="125"/>
+        <Region Id="TitanVTPoiRegionErodedChasm" R="0" G="250" B="250"/>
+        <Region Id="TitanVTPoiRegionNeedlePeak" R="125" G="0" B="0"/>
+        <Region Id="TitanVTPoiRegionGlacialTrack" R="125" G="0" B="250"/>
+        <Region Id="TitanVTPoiRegionPlainsSentinel" R="125" G="125" B="125"/>
+        <Region Id="TitanVTPoiRegionSharpOverlook" R="125" G="250" B="0"/>
+        <Region Id="TitanVTPoiRegionDuneField" R="125" G="250" B="125"/>
+      </RegionSet>
 
-            <DeepMinablesRegionData>
-                <RegionSet Id="TitanDeepMiningRegions"/>
-            </DeepMinablesRegionData>
-            
-            <PointOfInterest Id="TitanPoiCallanishPeak">
-                <Region Id="TitanPoiRegionCallanishPeak"/>
-                <Name Key="EuropaPoiCallanishPeakName"/>
-                <Description Key="EuropaPoiCallanishPeakDescription"/>
-            </PointOfInterest>
+      <RegionSet Id="TitanVTDeepMiningRegions">
+        <Texture Path="GameData/Worlds/TitanVT/Textures/europa_deep_mining_regions.png" Format="RGB24" LoadType="OnRequest"/>
+        <Region Id="TitanVTDeepMiningRegionCoal" R="255" G="0" B="239"/>
+        <Region Id="TitanVTDeepMiningRegionNickel" R="184" G="0" B="255"/>
+        <Region Id="TitanVTDeepMiningRegionGold" R="0" G="66" B="255"/>
+        <Region Id="TitanVTDeepMiningRegionSilver" R="0" G="153" B="255"/>
+        <Region Id="TitanVTDeepMiningRegionLead" R="0" G="237" B="255"/>
+        <Region Id="TitanVTDeepMiningRegionIronCopperSilicon" R="0" G="255" B="180"/>
+        <Region Id="TitanVTDeepMiningRegionCobalt" R="119" G="255" B="0"/>
+        <Region Id="TitanVTDeepMiningRegionGoldSilver" R="255" G="255" B="0"/>
+        <Region Id="TitanVTDeepMiningRegionSilverLeadNickel" R="255" G="194" B="0"/>
+        <Region Id="TitanVTDeepMiningRegionIron" R="255" G="129" B="0"/>
+        <Region Id="TitanVTDeepMiningRegionSilicon" R="255" G="8" B="0"/>
+      </RegionSet>
 
-            <PointOfInterest Id="TitanPoiFalgasDescent">
-                <Region Id="TitanPoiRegionFalgasDescent"/>
-                <Name Key="EuropaPoiFalgasDescentName"/>
-                <Description Key="EuropaPoiFalgasDescentDescription"/>
-            </PointOfInterest>
+      <DeepMinables Id="DeepMinableProfileIron">
+        <Region Id="TitanVTDeepMiningRegionIron"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileSilicon">
+        <Region Id="TitanVTDeepMiningRegionSilicon"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileIronCopperSilicon">
+        <Region Id="TitanVTDeepMiningRegionIronCopperSilicon"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileSilverLeadNickel">
+        <Region Id="TitanVTDeepMiningRegionSilverLeadNickel"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileGoldSilver">
+        <Region Id="TitanVTDeepMiningRegionGoldSilver"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileSilver">
+        <Region Id="TitanVTDeepMiningRegionSilver"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileLead">
+        <Region Id="TitanVTDeepMiningRegionLead"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileNickel">
+        <Region Id="TitanVTDeepMiningRegionNickel"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileCoal">
+        <Region Id="TitanVTDeepMiningRegionCoal"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileCobalt">
+        <Region Id="TitanVTDeepMiningRegionCobalt"/>
+      </DeepMinables>
+      <DeepMinables Id="DeepMinableProfileGold">
+        <Region Id="TitanVTDeepMiningRegionGold"/>
+      </DeepMinables>
 
-            <PointOfInterest Id="TitanPoiBalgatanRidge">
-                <Region Id="TitanPoiRegionBalgatanRidge"/>
-                <Name Key="EuropaPoiBalgatanRidgeName"/>
-                <Description Key="EuropaPoiBalgatanRidgeDescription"/>
-            </PointOfInterest>
+      <DeepMinablesRegionData>
+        <RegionSet Id="TitanVTDeepMiningRegions"/>
+      </DeepMinablesRegionData>
 
-            <PointOfInterest Id="TitanPoiSouthCallanishPass">
-                <Region Id="TitanPoiRegionSouthCallanishPass"/>
-                <Name Key="EuropaPoiSouthCallanishPassName"/>
-                <Description Key="EuropaPoiSouthCallanishPassDescription"/>
-            </PointOfInterest>
-            
-            <PointOfInterest Id="TitanPoiSidonGully">
-                <Region Id="TitanPoiRegionSidonGully"/>
-                <Name Key="EuropaPoiSidonGullyName"/>
-                <Description Key="EuropaPoiSidonGullyDescription"/>
-            </PointOfInterest>
-            
-            <PointOfInterest Id="TitanPoiMorensFell">
-                <Region Id="TitanPoiRegionMorensFell"/>
-                <Name Key="EuropaPoiMorensFellName"/>
-                <Description Key="EuropaPoiMorensFellDescription"/>
-            </PointOfInterest>
-            
-            <PointOfInterest Id="TitanPoiRegionBluePeak">
-                <Region Id="TitanPoiRegionBluePeak"/>
-                <Name Key="EuropaPoiRegionBluePeakName"/>
-                <Description Key="EuropaPoiRegionBluePeakDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiCallanishPeak">
+        <Region Id="TitanVTPoiRegionCallanishPeak"/>
+        <Name Key="EuropaPoiCallanishPeakName"/>
+        <Description Key="EuropaPoiCallanishPeakDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionAncientLake">
-                <Region Id="TitanPoiRegionAncientLake"/>
-                <Name Key="EuropaPoiRegionAncientLakeName"/>
-                <Description Key="EuropaPoiRegionAncientLakeDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiFalgasDescent">
+        <Region Id="TitanVTPoiRegionFalgasDescent"/>
+        <Name Key="EuropaPoiFalgasDescentName"/>
+        <Description Key="EuropaPoiFalgasDescentDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionSnowDuneValley">
-                <Region Id="TitanPoiRegionSnowDuneValley"/>
-                <Name Key="EuropaPoiRegionSnowDuneValleyName"/>
-                <Description Key="EuropaPoiRegionSnowDuneValleyDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiBalgatanRidge">
+        <Region Id="TitanVTPoiRegionBalgatanRidge"/>
+        <Name Key="EuropaPoiBalgatanRidgeName"/>
+        <Description Key="EuropaPoiBalgatanRidgeDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionHighMountain">
-                <Region Id="TitanPoiRegionHighMountain"/>
-                <Name Key="EuropaPoiRegionHighMountainName"/>
-                <Description Key="EuropaPoiRegionHighMountainDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiSouthCallanishPass">
+        <Region Id="TitanVTPoiRegionSouthCallanishPass"/>
+        <Name Key="EuropaPoiSouthCallanishPassName"/>
+        <Description Key="EuropaPoiSouthCallanishPassDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionErodedChasm">
-                <Region Id="TitanPoiRegionErodedChasm"/>
-                <Name Key="EuropaPoiRegionErodedChasmName"/>
-                <Description Key="EuropaPoiRegionErodedChasmDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiSidonGully">
+        <Region Id="TitanVTPoiRegionSidonGully"/>
+        <Name Key="EuropaPoiSidonGullyName"/>
+        <Description Key="EuropaPoiSidonGullyDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionNeedlePeak">
-                <Region Id="TitanPoiRegionNeedlePeak"/>
-                <Name Key="EuropaPoiRegionNeedlePeakName"/>
-                <Description Key="EuropaPoiRegionNeedlePeakDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiMorensFell">
+        <Region Id="TitanVTPoiRegionMorensFell"/>
+        <Name Key="EuropaPoiMorensFellName"/>
+        <Description Key="EuropaPoiMorensFellDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionGlacialTrack">
-                <Region Id="TitanPoiRegionGlacialTrack"/>
-                <Name Key="EuropaPoiRegionGlacialTrackName"/>
-                <Description Key="EuropaPoiRegionGlacialTrackDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiRegionBluePeak">
+        <Region Id="TitanVTPoiRegionBluePeak"/>
+        <Name Key="EuropaPoiRegionBluePeakName"/>
+        <Description Key="EuropaPoiRegionBluePeakDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionPlainsSentinel">
-                <Region Id="TitanPoiRegionPlainsSentinel"/>
-                <Name Key="EuropaPoiRegionPlainsSentinelName"/>
-                <Description Key="EuropaPoiRegionPlainsSentinelDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiRegionAncientLake">
+        <Region Id="TitanVTPoiRegionAncientLake"/>
+        <Name Key="EuropaPoiRegionAncientLakeName"/>
+        <Description Key="EuropaPoiRegionAncientLakeDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionSharpOverlook">
-                <Region Id="TitanPoiRegionSharpOverlook"/>
-                <Name Key="EuropaPoiRegionSharpOverlookName"/>
-                <Description Key="EuropaPoiRegionSharpOverlookDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiRegionSnowDuneValley">
+        <Region Id="TitanVTPoiRegionSnowDuneValley"/>
+        <Name Key="EuropaPoiRegionSnowDuneValleyName"/>
+        <Description Key="EuropaPoiRegionSnowDuneValleyDescription"/>
+      </PointOfInterest>
 
-            <PointOfInterest Id="TitanPoiRegionDuneField">
-                <Region Id="TitanPoiRegionDuneField"/>
-                <Name Key="EuropaPoiRegionDuneFieldName"/>
-                <Description Key="EuropaPoiRegionDuneFieldDescription"/>
-            </PointOfInterest>
+      <PointOfInterest Id="TitanVTPoiRegionHighMountain">
+        <Region Id="TitanVTPoiRegionHighMountain"/>
+        <Name Key="EuropaPoiRegionHighMountainName"/>
+        <Description Key="EuropaPoiRegionHighMountainDescription"/>
+      </PointOfInterest>
+
+      <PointOfInterest Id="TitanVTPoiRegionErodedChasm">
+        <Region Id="TitanVTPoiRegionErodedChasm"/>
+        <Name Key="EuropaPoiRegionErodedChasmName"/>
+        <Description Key="EuropaPoiRegionErodedChasmDescription"/>
+      </PointOfInterest>
+
+      <PointOfInterest Id="TitanVTPoiRegionNeedlePeak">
+        <Region Id="TitanVTPoiRegionNeedlePeak"/>
+        <Name Key="EuropaPoiRegionNeedlePeakName"/>
+        <Description Key="EuropaPoiRegionNeedlePeakDescription"/>
+      </PointOfInterest>
+
+      <PointOfInterest Id="TitanVTPoiRegionGlacialTrack">
+        <Region Id="TitanVTPoiRegionGlacialTrack"/>
+        <Name Key="EuropaPoiRegionGlacialTrackName"/>
+        <Description Key="EuropaPoiRegionGlacialTrackDescription"/>
+      </PointOfInterest>
+
+      <PointOfInterest Id="TitanVTPoiRegionPlainsSentinel">
+        <Region Id="TitanVTPoiRegionPlainsSentinel"/>
+        <Name Key="EuropaPoiRegionPlainsSentinelName"/>
+        <Description Key="EuropaPoiRegionPlainsSentinelDescription"/>
+      </PointOfInterest>
+
+      <PointOfInterest Id="TitanVTPoiRegionSharpOverlook">
+        <Region Id="TitanVTPoiRegionSharpOverlook"/>
+        <Name Key="EuropaPoiRegionSharpOverlookName"/>
+        <Description Key="EuropaPoiRegionSharpOverlookDescription"/>
+      </PointOfInterest>
+
+      <PointOfInterest Id="TitanVTPoiRegionDuneField">
+        <Region Id="TitanVTPoiRegionDuneField"/>
+        <Name Key="EuropaPoiRegionDuneFieldName"/>
+        <Description Key="EuropaPoiRegionDuneFieldDescription"/>
+      </PointOfInterest>
 
 
       <Stars>
-        <Star FadeHeight="1"/>
-        <Star FadeHeight="1"/>
+        <Star FadeHeight="700"/>
+        <Star FadeHeight="700"/>
       </Stars>
 
 
@@ -452,12 +453,12 @@
         <OcclusionBiasSkyRayleigh>0.2</OcclusionBiasSkyRayleigh>
         <OcclusionBiasSkyMie>0.4</OcclusionBiasSkyMie>
       </AtmosphericScatteringData>
-      <AmbientLightMin>0.05</AmbientLightMin>
-      <AmbientLightMax>0.8</AmbientLightMax>
+      <AmbientLightMin>0.1</AmbientLightMin>
+      <AmbientLightMax>0.4</AmbientLightMax>
       <AmbientLighting>
-        <Sky r="0.0729" g="0.0663" b="0.00218"/>
-        <Equator r="0.0641" g="0.0506" b="0.0021"/>
-        <Ground r="0.079" g="0.061" b="0.044"/>
+        <Sky r="0.729" g="0.663" b="0"/>
+        <Equator r="0.641" g="0.506" b="0"/>
+        <Ground r="0.79" g="0.61" b="0"/>
       </AmbientLighting>
       <!--                          -->
       <!-- Atmosphere Configuration -->
@@ -472,7 +473,7 @@
 
         <Gas>
           <Gas Type="Nitrogen" Quantity="1050" />
-          <Gas Type="Volatiles" Quantity="55" />
+          <Gas Type="Volatiles" Quantity="65" />
         </Gas>
       </GlobalAtmosphere>
 
@@ -621,43 +622,43 @@
       </PreviewScene>
 
 
-            <GeographicRegionData>
-                <DefaultRegionName Value="Titan"/>
-                <RegionSet Id="TitanNamedRegions"/>
-            </GeographicRegionData>
-             
-            <TerrainSettings Path="GameData/Worlds/TitanVT/Terrain" WorldSize="4096">
-                <Curvature Value="0.25"/>
-                <MiniMap Path="GameData/Worlds/TitanVT/Textures/europa_minimap.png" Format="DXT1" LoadType="OnRequest"/>
-                <MaterialSettings>
-                    <Macro>
-                        <MacroTextureBlend Value="0.2"/>
-                        <Albedo Path="GameData/Worlds/TitanVT/Textures/Europa_Colormap.png" Format="BC7" LoadType="OnRequest"/>
-                        <Normal Path="GameData/Worlds/TitanVT/Textures/Europa_Normal Map.png" LoadType="OnRequest" Value="1"/>
-                    </Macro>
-                    <Detail
-                            UVScale="1"
-                            DetailFadeStart="75"
-                            DetailFadeEnd="150"
-                            FractalDepthScale="0.5"
-                            LodMin="2"
-                            MipmapBias="-0.1"
-                            BlendSharpness="500">
-                        <GroupOne>
-                            <Albedo Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
-                            <Normal Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_normal.png" LoadType="OnRequest" Value="0.5"/>
-                            <Roughness Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_roughness.png" LoadType="OnRequest" Value="0.36"/>
-                            <Displacement Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
-                        </GroupOne>
-                        <GroupTwo>
-                            <Albedo Path="GameData/Worlds/TitanVT/Textures/Snow2_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
-                            <Normal Path="GameData/Worlds/TitanVT/Textures/Snow2_normal.png" LoadType="OnRequest" Value="0.5"/>
-                            <Roughness Path="GameData/Worlds/TitanVT/Textures/Snow2_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.566"/>
-                            <Displacement Path="GameData/Worlds/TitanVT/Textures/Snow2_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
-                        </GroupTwo>
-                    </Detail>
-                </MaterialSettings>
-            </TerrainSettings>
-     </World>
+      <GeographicRegionData>
+        <DefaultRegionName Value="Titan"/>
+        <RegionSet Id="TitanVTNamedRegions"/>
+      </GeographicRegionData>
+
+      <TerrainSettings Path="GameData/Worlds/TitanVT/Terrain" WorldSize="4096">
+        <Curvature Value="0.25"/>
+        <MiniMap Path="GameData/Worlds/TitanVT/Textures/europa_minimap.png" Format="DXT1" LoadType="OnRequest"/>
+        <MaterialSettings>
+          <Macro>
+            <MacroTextureBlend Value="0.2"/>
+            <Albedo Path="GameData/Worlds/TitanVT/Textures/Europa_Colormap.png" Format="BC7" LoadType="OnRequest"/>
+            <Normal Path="GameData/Worlds/TitanVT/Textures/Europa_Normal Map.png" LoadType="OnRequest" Value="1"/>
+          </Macro>
+          <Detail
+                  UVScale="1"
+                  DetailFadeStart="75"
+                  DetailFadeEnd="150"
+                  FractalDepthScale="0.5"
+                  LodMin="2"
+                  MipmapBias="-0.1"
+                  BlendSharpness="500">
+            <GroupOne>
+              <Albedo Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+              <Normal Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_normal.png" LoadType="OnRequest" Value="0.5"/>
+              <Roughness Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_roughness.png" LoadType="OnRequest" Value="0.36"/>
+              <Displacement Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+            </GroupOne>
+            <GroupTwo>
+              <Albedo Path="GameData/Worlds/TitanVT/Textures/Snow2_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
+              <Normal Path="GameData/Worlds/TitanVT/Textures/Snow2_normal.png" LoadType="OnRequest" Value="0.5"/>
+              <Roughness Path="GameData/Worlds/TitanVT/Textures/Snow2_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.566"/>
+              <Displacement Path="GameData/Worlds/TitanVT/Textures/Snow2_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+            </GroupTwo>
+          </Detail>
+        </MaterialSettings>
+      </TerrainSettings>
+    </World>
   </WorldSettings>
 </GameData>

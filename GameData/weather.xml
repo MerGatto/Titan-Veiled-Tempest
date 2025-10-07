@@ -10,8 +10,8 @@
 		<WindStrength Value="2"/>
 		<MovementSpeedMultiplier Value="0.5"/>
 		<DamageMultiplier Value="0.5"/>
-		<Fog StartDistance="15" EndDistance="180">
-			<Color r="1" g="0.62" b="0.51" a="0.865"/>
+		<Fog>
+			<Color r="1" g="0.9" b="0.6" a="0.95"/>
 		</Fog>
 		<TemperatureOffset>
 			<Day Value="-27"/>
