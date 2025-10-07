@@ -25,9 +25,9 @@ For an added challenge, consider using **Free Lunch's Structure Thermodynamics m
 - **Coal is rare on the surface** but can be found using **deep miners**.
 - **Oxite ice is scarce**, but **Nitric ice can substitute** for furnace usage.
 - **Leverage the cold atmosphere**—**Gas Fuel Generators** are easier to set up.
-- 
+
 ## Disclaimer
-The Terrain Data for this world is currently just a copy of Europa
+The Terrain Data for this world is currently just a copy of Europa.  
 Map layout, Spawn Points, Named Regions and Deep Mining Regions are therefore exactly the same as on Europa.
 In later updates I might include my own terrain data.
 
