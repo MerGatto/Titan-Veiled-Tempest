@@ -4,7 +4,7 @@
 See: [StationeersLaunchPad](https://github.com/StationeersLaunchPad/StationeersLaunchPad)
 
 ## Description
-'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by other Titan versions by *Vivien* and *murk*. This version features two different weather events:
+"Titan: Veiled Tempest" is my attempt at creating a more challenging alternative to Europa, inspired by other Titan versions by *Vivien* and *murk*. This version features two different weather events:
 - **Acid Methane Rain (Volatiles)** - Most commonly occurring.
 - **Snow Storms** - Less frequent but still hazardous.
 
