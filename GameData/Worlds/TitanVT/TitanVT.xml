@@ -25,7 +25,7 @@
       <SkyBoxMaterialName>EuropaSky</SkyBoxMaterialName>
       <SetSunInSkybox>true</SetSunInSkybox>
       <SunPrefabName>MimasSun</SunPrefabName>
-      <MaxSunIntensity>0.9</MaxSunIntensity>
+      <MaxSunIntensity>0.7</MaxSunIntensity>
       <Gravity>-1.35</Gravity>
       <StartingCondition>Default</StartingCondition>
       <Minables Id="TitanVTMinablesSurface">
@@ -483,7 +483,7 @@
       <WeatherEvent Id="TitanToxicRain" />
       <WeatherEvent Id="TitanToxicRain" />
       <WeatherEvent Id="TitanToxicRain" />
-      <WeatherEvent Id="TitanSnowStorm" />
+      <WeatherEvent Id="TitanDustStorm" />
 
       <CelestialConstants TimeScale="0.00565" BodyScale="2">
         <TimeOffset Minutes="6" Seconds="0" />
@@ -632,7 +632,7 @@
         <MiniMap Path="GameData/Worlds/TitanVT/Textures/europa_minimap.png" Format="DXT1" LoadType="OnRequest"/>
         <MaterialSettings>
           <Macro>
-            <MacroTextureBlend Value="0.2"/>
+            <MacroTextureBlend Value="1"/>
             <Albedo Path="GameData/Worlds/TitanVT/Textures/Europa_Colormap.png" Format="BC7" LoadType="OnRequest"/>
             <Normal Path="GameData/Worlds/TitanVT/Textures/Europa_Normal Map.png" LoadType="OnRequest" Value="1"/>
           </Macro>
@@ -643,7 +643,7 @@
                   FractalDepthScale="0.5"
                   LodMin="2"
                   MipmapBias="-0.1"
-                  BlendSharpness="500">
+                  BlendSharpness="30">
             <GroupOne>
               <Albedo Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
               <Normal Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_normal.png" LoadType="OnRequest" Value="0.5"/>
@@ -651,10 +651,10 @@
               <Displacement Path="GameData/Worlds/TitanVT/Textures/ChunkyRock_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
             </GroupOne>
             <GroupTwo>
-              <Albedo Path="GameData/Worlds/TitanVT/Textures/Snow2_basecolor.png" Format="DXT1" LoadType="OnRequest"/>
-              <Normal Path="GameData/Worlds/TitanVT/Textures/Snow2_normal.png" LoadType="OnRequest" Value="0.5"/>
-              <Roughness Path="GameData/Worlds/TitanVT/Textures/Snow2_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.566"/>
-              <Displacement Path="GameData/Worlds/TitanVT/Textures/Snow2_height.png" Format="BC4" LoadType="OnRequest" Value="0.2"/>
+              <Albedo Path="GameData/Worlds/TitanVT/Textures/ground_color.png" Format="DXT1" LoadType="OnRequest"/>
+              <Normal Path="GameData/Worlds/TitanVT/Textures/ground_normal.png" LoadType="OnRequest" Value="0.2"/>
+              <Roughness Path="GameData/Worlds/TitanVT/Textures/ground_roughness.png" Format="BC4" LoadType="OnRequest" Value="0.1"/>
+              <Displacement Path="GameData/Worlds/TitanVT/Textures/ground_height.png" Format="BC4" LoadType="OnRequest" Value="0.25"/>
             </GroupTwo>
           </Detail>
         </MaterialSettings>

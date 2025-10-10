@@ -2,7 +2,7 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Titan: Veiled Tempest</Name>
   <Author>MerGatto</Author>
-  <Version>0.2.0</Version>
+  <Version>0.3.0</Version>
   <Description>
 [h1]Titan -  Veiled Tempest[/h1]
 [b]WARNING:[/b] This is a Plugin Mod. It requires BepInEx to be installed with the StationeersLaunchPad plugin.
@@ -12,7 +12,7 @@ See: [url=https://github.com/StationeersLaunchPad/StationeersLaunchPad]Stationee
 'Titan: Veiled Tempest' is my attempt at creating a more challenging alternative to Europa, inspired by other Titan versions by [b]Vivien[/b] and [b]murk[/b]. This version features two different weather events:
 [list]
 [*][b]Acid Methane Rain (Volatiles)[/b] - Most commonly occurring.
-[*][b]Snow Storms[/b] - Less frequent but still hazardous.
+[*][b]Dust Storms[/b] - Less frequent but still hazardous.
 [/list]
 These world settings can function independently, but for the intended experience, installing [url=https://github.com/StationeersLaunchPad/StationeersLaunchPad]StationeersLaunchPad[/url] is required.
 
@@ -20,7 +20,7 @@ These world settings can function independently, but for the intended experience
 [list]
 [*]The [b]first weather event[/b] occurs [b]after 1 day[/b] instead of 7.
 [*]The [b]first weather event[/b] is always [b]Acid Rain[/b].
-[*][b]Acid Rain[/b] and [b]Snow Storms[/b] do [b]not[/b] trigger forced follow-up events (e.g., 'Regular' rain).
+[*][b]Acid Rain[/b] and [b]Storms[/b] do [b]not[/b] trigger forced follow-up events (e.g., 'Regular' rain).
 [/list]
 
 For an added challenge, consider using  [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3336803492]Free Lunch's Structure Thermodynamics mod[/url] alongside this world.
@@ -50,6 +50,11 @@ In later updates I might include my own terrain data.
 [b]Enjoy the challenge![/b] Feel free to contribute or provide feedback!
 </Description>
 <ChangeLog>
+  [h3]Version 0.3.0:[/h3]
+  [list]
+  [*] Changed Snow to Sand and adjusted terrain coloring
+  [*] Replaced Snow Storm with Dust Storm
+  [*] Adjusted weather events slightly, should be darker now during storms
   [h3]Version 0.2.0:[/h3]
   [list]
   [*] Updated for the 'Biggest Update Ever', using a copy of Europa for terrain data

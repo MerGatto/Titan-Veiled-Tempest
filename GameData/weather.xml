@@ -6,12 +6,12 @@
 		<CoolDown Min="1" Max="2"/>
 		<StartDelay Min="0" Max="0"/>
 		<Duration Min="180" Max="600"/>
-		<SolarRatio Value="0.5"/>
+		<SolarRatio Value="0.3"/>
 		<WindStrength Value="2"/>
 		<MovementSpeedMultiplier Value="0.5"/>
 		<DamageMultiplier Value="0.5"/>
 		<Fog>
-			<Color r="1" g="0.9" b="0.6" a="0.95"/>
+			<Color r="0.4" g="0.3" b="0" a="1"/>
 		</Fog>
 		<TemperatureOffset>
 			<Day Value="-27"/>
@@ -24,14 +24,14 @@
 		<Shell4Sound Value="RainShell4"/>
 	</WeatherEvent>
 
-  <WeatherEvent Id="TitanSnowStorm">
-    <Name Value="Snow Storm"/>
-    <ParticleId Value="SnowStorm"/>
+  <WeatherEvent Id="TitanDustStorm">
+    <Name Value="Dust Storm"/>
+    <ParticleId Value="DustStorm"/>
     <CoolDown Min="1" Max="2"/>
     <StartDelay Min="120" Max="240"/>
     <Duration Min="180" Max="600"/>
     <Fog>
-      <Color r="1" g="0.77" b="0.46" a="0.9"/>
+      <Color r="0.4" g="0.3" b="0" a="1"/>
     </Fog>
     <TemperatureOffset>
       <Day Value="-60"/>
