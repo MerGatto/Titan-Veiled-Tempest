@@ -1,35 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
-  <WeatherEvent Id="TitanToxicRain">
-		<Name Value="Acid Rain"/>
-		<ParticleId Value="Rain"/>
-		<CoolDown Min="1" Max="2"/>
-		<StartDelay Min="0" Max="0"/>
-		<Duration Min="180" Max="600"/>
-		<SolarRatio Value="0.3"/>
-		<WindStrength Value="2"/>
-		<MovementSpeedMultiplier Value="0.5"/>
-		<DamageMultiplier Value="0.5"/>
-		<Fog>
-			<Color r="0.4" g="0.3" b="0" a="1"/>
-		</Fog>
-		<TemperatureOffset>
-			<Day Value="-27"/>
-			<Night Value="-27"/>
-		</TemperatureOffset>
-		<Direction Value="Down"/>
-		<Shell1Sound Value="RainShell1"/>
-		<Shell2Sound Value="RainShell2"/>
-		<Shell3Sound Value="RainShell3"/>
-		<Shell4Sound Value="RainShell4"/>
-	</WeatherEvent>
+  <WeatherEvent Id="TitanToxicRain" WindSound="true">
+    <Name Value="Acid Rain"/>
+    <ParticleId Value="Rain"/>
+    <FirstStormDelay Value="1"/>
+    <CoolDown Min="1" Max="2"/>
+    <StartDelay Min="0" Max="0"/>
+    <Duration Min="180" Max="600"/>
+    <SolarRatio Value="0.3"/>
+    <WindStrength Value="2"/>
+    <MovementSpeedMultiplier Value="0.5"/>
+    <DamageMultiplier Value="0.5"/>
+    <StormEffect Speed="6" Size="12">
+      <RayMarch Size="0.33" Growth="0.4" Density="0.15"/>
+      <Layer1 Power="0.69" Multiplier="1" />
+      <Layer2 Threshold="0.35" Power="2.8" Multiplier="8" MaskMultiplier="8"/>
+      <Layer3 Threshold="0.1" Power="1.17" Multiplier="2"/>
+      <Color1 r="157" g="134" b="100" a="64"/>
+      <Color2 r="80" g="80" b="0" a="255"/>
+      <Color3 r="255" g="255" b="255" a="255"/>
+      <MaskColor r="157" g="134" b="120" a="180"/>
+    </StormEffect>
+    <Fog>
+      <Color r="0.4" g="0.3" b="0" a="1"/>
+    </Fog>
+    <TemperatureOffset>
+      <Day Value="-27"/>
+      <Night Value="-27"/>
+    </TemperatureOffset>
+    <Shell1Sound Value="RainShell1"/>
+    <Shell2Sound Value="RainShell2"/>
+    <Shell3Sound Value="RainShell3"/>
+    <Shell4Sound Value="RainShell4"/>
+  </WeatherEvent>
 
-  <WeatherEvent Id="TitanDustStorm">
+  <WeatherEvent Id="TitanDustStorm" WindSound="true">
     <Name Value="Dust Storm"/>
     <ParticleId Value="DustStorm"/>
     <CoolDown Min="1" Max="2"/>
     <StartDelay Min="120" Max="240"/>
     <Duration Min="180" Max="600"/>
+    <StormEffect Speed="2" Size="12">
+      <RayMarch Size="0.2" Growth="0.3" Density="1.4"/>
+      <Layer1 Power="0.8" Multiplier="1"/>
+      <Layer2 Threshold="0.22" Power="0.84" Multiplier="1" MaskMultiplier="1"/>
+      <Layer3 Threshold="0.12" Power="1.53" Multiplier="0.5"/>
+      <Color1 r="91" g="69" b="61" a="255"/>
+      <Color2 r="212" g="153" b="113" a="255"/>
+      <MaskColor r="0" g="0" b="0" a="255"/>
+    </StormEffect>
     <Fog>
       <Color r="0.4" g="0.3" b="0" a="1"/>
     </Fog>
@@ -41,13 +60,5 @@
     <WindStrength Value="15"/>
     <MovementSpeedMultiplier Value ="0.1"/>
     <DamageMultiplier Value="1"/>
-    <Direction Value="North"/>
-    <Direction Value="East"/>
-    <Direction Value="South"/>
-    <Direction Value="West"/>
-    <Shell1Sound Value="WindShell1"/>
-    <Shell2Sound Value="WindShell2"/>
-    <Shell3Sound Value="WindShell3"/>
-    <Shell4Sound Value="WindShell4"/>
   </WeatherEvent>
 </GameData>

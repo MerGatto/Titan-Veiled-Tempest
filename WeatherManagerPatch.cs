@@ -122,22 +122,6 @@ namespace TitanVT
             }
         }
 
-        private static bool HasEmitterAtLocation(Vector3 worldPosition, EnvironmentalAudioHandler.ShellData shellData)
-        {
-            using (List<EnvironmentalAudioHandler.EmitterDatum>.Enumerator enumerator = shellData.EmitterData.GetEnumerator())
-            {
-                while (enumerator.MoveNext())
-                {
-                    if (RocketMath.Approximately(enumerator.Current.Position, worldPosition))
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        // Token: 0x060037A5 RID: 14245 RVA: 0x00101912 File Offset: 0x000FFB12
         private static Grid3 IndexToLocal(int index, int stormSize, int gridSize)
         {
             return new Grid3(index % stormSize, index / stormSize % stormSize, index / (stormSize * stormSize)) * gridSize;
@@ -169,11 +153,7 @@ namespace TitanVT
                         _workingList.Clear();
                         foreach (int num in hashSet)
                         {
-                            bool hasEmitterAtLocation = HasEmitterAtLocation(IndexToWorld(num), shellData);
-                            if (!hasEmitterAtLocation)
-                            {
-                                _workingList.Add(num);
-                            }
+                            _workingList.Add(num);
                         }
                         if (_workingList.Count != 0)
                         {
