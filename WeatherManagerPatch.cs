@@ -169,8 +169,8 @@ namespace TitanVT
                         _workingList.Clear();
                         foreach (int num in hashSet)
                         {
-                            if (true //__instance._stormLocal.IsInStorm(num)
-                                && !EnvironmentalAudioHandler_SpawnEmittersInShells_Patch.HasEmitterAtLocation(IndexToWorld(num), shellData))
+                            bool hasEmitterAtLocation = HasEmitterAtLocation(IndexToWorld(num), shellData);
+                            if (!hasEmitterAtLocation)
                             {
                                 _workingList.Add(num);
                             }
@@ -180,26 +180,11 @@ namespace TitanVT
                             for (int j = shellData.EmitterData.Count; j <= shellData.MaxCount; j++)
                             {
                                 int index = _workingList[UnityEngine.Random.Range(0, _workingList.Count)];
-                                bool flag = false;
-                                using (List<EnvironmentalAudioHandler.EmitterDatum>.Enumerator enumerator2 = shellData.EmitterData.GetEnumerator())
-                                {
-                                    while (enumerator2.MoveNext())
-                                    {
-                                        if (enumerator2.Current.Position == IndexToWorld(index))
-                                        {
-                                            flag = true;
-                                            break;
-                                        }
-                                    }
-                                }
-                                if (!flag)
-                                {
-                                    Debug.Log("Playing Rainshell..");
-                                    int shellSound = WeatherManager.CurrentWeatherEvent.GetShellSound(i);
-                                    Vector3 vector = IndexToWorld(index);
-                                    Singleton<AudioManager>.Instance.PlayAudioClipsData(shellSound, vector, 1f, 1f);
-                                    shellData.EmitterData.Add(new EnvironmentalAudioHandler.EmitterDatum(vector, GameManager.GameTime + shellData.CoolDownTime * UnityEngine.Random.Range(0.85f, 1.2f)));
-                                }
+                                Debug.Log("Playing Rainshell..");
+                                int shellSound = WeatherManager.CurrentWeatherEvent.GetShellSound(i);
+                                Vector3 vector = IndexToWorld(index);
+                                Singleton<AudioManager>.Instance.PlayAudioClipsData(shellSound, vector, 1f, 1f);
+                                shellData.EmitterData.Add(new EnvironmentalAudioHandler.EmitterDatum(vector, GameManager.GameTime + shellData.CoolDownTime * UnityEngine.Random.Range(0.85f, 1.2f)));
                             }
                         }
                     }
