@@ -142,7 +142,6 @@ namespace TitanVT
         {
             if (WeatherManager.CurrentWeatherEvent.IdHash == Animator.StringToHash("TitanToxicRain"))
             {
-                Debug.Log("Handling RainShells for TitanToxicRain");
                 List<int> _workingList = new List<int>();
                 for (int i = 0; i < __instance.ShellDatas.Length; i++)
                 {
@@ -160,7 +159,6 @@ namespace TitanVT
                             for (int j = shellData.EmitterData.Count; j <= shellData.MaxCount; j++)
                             {
                                 int index = _workingList[UnityEngine.Random.Range(0, _workingList.Count)];
-                                Debug.Log("Playing Rainshell..");
                                 int shellSound = WeatherManager.CurrentWeatherEvent.GetShellSound(i);
                                 Vector3 vector = IndexToWorld(index);
                                 Singleton<AudioManager>.Instance.PlayAudioClipsData(shellSound, vector, 1f, 1f);

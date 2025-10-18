@@ -2,7 +2,7 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Titan: Veiled Tempest</Name>
   <Author>MerGatto</Author>
-  <Version>0.4.0</Version>
+  <Version>0.4.1</Version>
   <Description>
 [h1]Titan -  Veiled Tempest[/h1]
 [b]WARNING:[/b] This is a Plugin Mod. It requires BepInEx to be installed with the StationeersLaunchPad plugin.
@@ -50,7 +50,7 @@ In later updates I might include my own terrain data.
 [b]Enjoy the challenge![/b] Feel free to contribute or provide feedback!
 </Description>
 <ChangeLog>
-Updated weather effects to be compatible with 'The storm update'
+Removed excessive debug logs
 </ChangeLog>
   <WorkshopHandle>3418110764</WorkshopHandle>
   <Tags>
