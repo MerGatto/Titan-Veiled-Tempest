@@ -2,7 +2,7 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>Titan: Veiled Tempest</Name>
   <Author>MerGatto</Author>
-  <Version>0.3.0</Version>
+  <Version>0.4.0</Version>
   <Description>
 [h1]Titan -  Veiled Tempest[/h1]
 [b]WARNING:[/b] This is a Plugin Mod. It requires BepInEx to be installed with the StationeersLaunchPad plugin.
@@ -50,24 +50,8 @@ In later updates I might include my own terrain data.
 [b]Enjoy the challenge![/b] Feel free to contribute or provide feedback!
 </Description>
 <ChangeLog>
-  [h3]Version 0.3.0:[/h3]
-  [list]
-  [*] Changed Snow to Sand and adjusted terrain coloring
-  [*] Replaced Snow Storm with Dust Storm
-  [*] Adjusted weather events slightly, should be darker now during storms
-  [h3]Version 0.2.0:[/h3]
-  [list]
-  [*] Updated for the 'Biggest Update Ever', using a copy of Europa for terrain data
-  [*] Renamed mod to 'Titan: Veiled' tempest to have a naming more in line with vanilla worlds
-  [*] Migrated to StationeerLaunchpad
-
-
-  [/list]
-  [h3]Version 0.1.0:[/h3]
-  [list]
-  [*]Initial release
-  [/list]
-    </ChangeLog>
+Updated weather effects to be compatible with 'The storm update'
+</ChangeLog>
   <WorkshopHandle>3418110764</WorkshopHandle>
   <Tags>
     <Tag>World Settings</Tag>
