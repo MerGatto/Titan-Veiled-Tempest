@@ -17,13 +17,19 @@ using Weather;
 
 namespace TitanVT
 {
+    public static class Const
+    {
+        public const string TitanVTId = "TitanVT";
+        public const string TitanToxicRainId = "TitanToxicRain";
+    }
+
     [HarmonyPatch(typeof(WeatherManager), nameof(WeatherManager.StopCurrentWeatherEvent))]
     [UsedImplicitly]
     public static class WeatherManager_StopCurrentWeatherEvent_Patch
     {
         public static void Postfix()
         {
-            if (WorldManager.CurrentWorldId == "TitanVT")
+            if (WorldManager.CurrentWorldId == Const.TitanVTId)
             {
                 ConsoleWindow.Print("Clearing Liquid Clouds");
                 Type type = typeof(PlanetaryAtmosphereSimulation);
@@ -51,7 +57,7 @@ namespace TitanVT
     {
         public static bool Prefix(ref bool __result)
         {
-            if (WorldManager.CurrentWorldId == "TitanVT")
+            if (WorldManager.CurrentWorldId == Const.TitanVTId)
             {
                 __result = WorldManager.DaysPast > 1;
                 return false;
@@ -66,7 +72,7 @@ namespace TitanVT
     {
         public static void Postfix(ref WeatherEvent __result)
         {
-            if (WorldManager.CurrentWorldId == "TitanVT" && WorldManager.DaysPast < 5)
+            if (WorldManager.CurrentWorldId == Const.TitanVTId && WorldManager.DaysPast < 5)
             {
                 Debug.Log("Forcing Storm to TitanToxicRain in first 5 days");
                 __result = DataCollection.Get<WeatherEvent>(Animator.StringToHash("TitanToxicRain"));
@@ -80,7 +86,7 @@ namespace TitanVT
     {
         public static void Postfix(ref Vector3 __result)
         {
-            if (WeatherManager.CurrentWeatherEvent.IdHash == Animator.StringToHash("TitanToxicRain"))
+            if (WeatherManager.CurrentWeatherEvent.IdHash == Animator.StringToHash(Const.TitanToxicRainId))
             {
                 Debug.Log("Forcing Storm direction down for TitanToxicRain");
                 __result = new Vector3(__result.x, -0.6f, __result.z ).normalized;
@@ -140,7 +146,7 @@ namespace TitanVT
 
         public static void Postfix(ref EnvironmentalAudioHandler __instance)
         {
-            if (WeatherManager.CurrentWeatherEvent.IdHash == Animator.StringToHash("TitanToxicRain"))
+            if (WeatherManager.CurrentWeatherEvent.IdHash == Animator.StringToHash(Const.TitanToxicRainId))
             {
                 List<int> _workingList = new List<int>();
                 for (int i = 0; i < __instance.ShellDatas.Length; i++)
